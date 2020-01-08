@@ -6,7 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pharmacy_frontend" />
+        <module name="pharmacyadvertising" />
+        <module name="pharmacyclassify" />
+        <module name="pharmacycommon" />
+        <module name="pharmacyorder" />
+        <module name="pharmacyportal" />
+        <module name="pharmacyrest" />
+        <module name="pharmacysearch" />
       </profile>
     </annotationProcessing>
   </component>
