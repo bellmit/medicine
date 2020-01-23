@@ -1,4 +1,4 @@
-<!doctype html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="zh">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,24 +9,22 @@
     <meta name="baidu-site-verification" content="wF8dpAI40x" />
 <meta name="copyright" content="yuekangsong Inc. All Rights Reserved">
 <style type="text/css">
-body {
-_behavior: url(https://www.yuekangsong.com/shop/templates/default/css/csshover.htc);
-}
+
 </style>
-<link href="shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
-<link href="shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
-<link href="shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
-<link href="shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="/shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
+<link href="/shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
+<link href="/shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
+<link href="/shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 <!--[if IE 7]>
   <link rel="stylesheet" href="https://www.yuekangsong.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
 <![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-      <script src="https://www.yuekangsong.com/data/resource/js/html5shiv.js"></script>
-      <script src="https://www.yuekangsong.com/data/resource/js/respond.min.js"></script>
+      <script src="/data/resource/js/html5shiv.js"></script>
+      <script src="/data/resource/js/respond.min.js"></script>
 <![endif]-->
 <!--[if IE 6]>
-<script src="https://www.yuekangsong.com/data/resource/js/IE6_PNG.js"></script>
+<script src="/data/resource/js/IE6_PNG.js"></script>
 <script>
 DD_belatedPNG.fix('.pngFix');
 </script>
@@ -43,12 +41,12 @@ catch(e){}
 <script>
 var COOKIE_PRE = 'yuekangsong_';var _CHARSET = 'utf-8';var SITEURL = 'https://www.yuekangsong.com';var SHOP_SITE_URL = 'https://www.yuekangsong.com';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var SHOP_TEMPLATES_URL = 'https://www.yuekangsong.com/shop/templates/default';
 </script>
-<script src="data/resource/js/jquery.js"></script>
-<script src="data/resource/js/common.js" charset="utf-8"></script>
-<script src="data/resource/js/jquery-ui/jquery.ui.js"></script>
-<script src="data/resource/js/jquery.validation.min.js"></script>
-<script src="data/resource/js/jquery.masonry.js"></script>
-<script src="data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+<script src="/data/resource/js/jquery.js"></script>
+<script src="/data/resource/js/common.js" charset="utf-8"></script>
+<script src="/data/resource/js/jquery-ui/jquery.ui.js"></script>
+<script src="/data/resource/js/jquery.validation.min.js"></script>
+<script src="/data/resource/js/jquery.masonry.js"></script>
+<script src="/data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
 <script type="text/javascript">
 var PRICE_FORMAT = '&yen;%s';
 $(function(){

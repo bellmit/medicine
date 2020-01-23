@@ -5,6 +5,8 @@ import java.util.Date;
 public class MedicineMessage {
     private Integer id;
 
+    private String itemId;
+
     private String itemName;
 
     private String itemBrand;
@@ -35,6 +37,14 @@ public class MedicineMessage {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(String itemId) {
+        this.itemId = itemId;
     }
 
     public String getItemName() {

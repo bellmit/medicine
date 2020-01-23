@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import vo.*;
 
 @Controller
-@RequestMapping("/medicine")
+@RequestMapping("/item")
 public class MedicineController {
 
     @Autowired

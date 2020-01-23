@@ -14,6 +14,11 @@ public class MedicineServiceImpl implements MedicineService {
     @Override
     public MedicineMessage query(String itemId) {
         MedicineMessage message = new MedicineMessage(); //等接口
+        message.setItemId(itemId);
+        message.setItemName("哈哈");
+        message.setItemBrand("234567");
+        message.setItemMembership(234L);
+        message.setNum(12345);
         return message;
     }
 
