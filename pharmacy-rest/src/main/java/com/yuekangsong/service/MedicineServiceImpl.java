@@ -1,5 +1,9 @@
 package com.yuekangsong.service;
 
+import httpClient.HttpClientUtil;
+import json.JsonUtils;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
 import org.springframework.stereotype.Service;
 import vo.*;
 
@@ -13,13 +17,10 @@ public class MedicineServiceImpl implements MedicineService {
      */
     @Override
     public MedicineMessage query(String itemId) {
-        MedicineMessage message = new MedicineMessage(); //等接口
-        message.setItemId(itemId);
-        message.setItemName("哈哈");
-        message.setItemBrand("234567");
-        message.setItemMembership(234L);
-        message.setNum(12345);
-        return message;
+
+        String json = HttpClientUtil.doGet("http://localhost:8080/aa/medin/query/" + itemId);
+        MedicineMessage medicineMessage = JsonUtils.jsonToPojo(json, MedicineMessage.class);
+        return medicineMessage;
     }
 
     /**

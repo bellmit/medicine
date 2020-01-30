@@ -1,14 +1,16 @@
 package com.yuekangsong.controller;
 
 import com.yuekangsong.service.MedicineService;
+import httpClient.HttpClientUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import vo.*;
 
-@Controller
+@RestController
 @RequestMapping("/item")
 public class MedicineController {
 
@@ -21,7 +23,6 @@ public class MedicineController {
      * @return
      */
     @RequestMapping("/message/{itemId}")
-    @ResponseBody
     public MedicineMessage queryMessage(@PathVariable String itemId){
         MedicineMessage message = medicineService.query(itemId);
         return message;
@@ -33,7 +34,6 @@ public class MedicineController {
      * @return
      */
     @RequestMapping("/desc/{itemId}")
-    @ResponseBody
     public ItemDesc queryDesc(@PathVariable String itemId){
         ItemDesc itemDesc = medicineService.queryDesc(itemId);
         return itemDesc;
@@ -45,7 +45,6 @@ public class MedicineController {
      * @return
      */
     @RequestMapping("/explain/{itemId}")
-    @ResponseBody
     public ItemExplain queryExplain(@PathVariable String itemId){
         ItemExplain itemExplain = medicineService.queryExplain(itemId);
         return itemExplain;
@@ -57,7 +56,6 @@ public class MedicineController {
      * @return
      */
     @RequestMapping("/sales/{itemId}")
-    @ResponseBody
     public Sales querySales(@PathVariable String itemId){
         Sales sales = medicineService.querySales(itemId);
         return sales;
@@ -69,7 +67,6 @@ public class MedicineController {
      * @return
      */
     @RequestMapping("/appraise/{drugId}")
-    @ResponseBody
     public Appraise queryAppraise(@PathVariable String drugId){
         Appraise appraise = medicineService.queryAppraise(drugId);
         return appraise;
