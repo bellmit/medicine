@@ -36,6 +36,6 @@
     </bean>
     <!-- 配置扫描包，加载mapper接口类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.taotao.mapper"></property>
+        <property name="basePackage" value="com.advertis.mapper"></property>
     </bean>
 </beans>
