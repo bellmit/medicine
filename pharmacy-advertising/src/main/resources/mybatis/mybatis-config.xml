@@ -13,11 +13,11 @@
     <typeAliases>
 
     </typeAliases>
-    <!--配置分页插件-->
-    <plugins>
-        <plugin interceptor="com.github.pagehelper.PageHelper">
-            <property name="dialect" value="mysql"/>
-            <property name="pageSizeZero" value="false"/>
-        </plugin>
-    </plugins>
+    <!--&lt;!&ndash;配置分页插件&ndash;&gt;-->
+    <!--<plugins>-->
+        <!--<plugin interceptor="com.github.pagehelper.PageHelper">-->
+            <!--<property name="dialect" value="mysql"/>-->
+            <!--<property name="pageSizeZero" value="false"/>-->
+        <!--</plugin>-->
+    <!--</plugins>-->
 </configuration>
