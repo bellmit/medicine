@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pharmacy-classify:war">
+    <output-path>$PROJECT_DIR$/pharmacy-classify/target</output-path>
+    <root id="archive" name="pharmacy-classify.war">
+      <element id="artifact" artifact-name="pharmacy-classify:war exploded" />
+    </root>
+  </artifact>
+</component>

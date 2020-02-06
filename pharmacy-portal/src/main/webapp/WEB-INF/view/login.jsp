@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -19,10 +20,10 @@
         <div class="am-peopel"><img src="https://www.yuekangsong.com/shop/templates/default/images/new/doctors.jpg"></div>
     </div>
     <div class="am-right-bar">
-        <form id="signupForm" method="post" action="index.php?c=login&op=login"  class="bg">
-        <input type='hidden' name='formhash' value='PTk4mSSBf0k0Rx8rOJQTs5DkSWGgUUy' />        <input type="hidden" name="form_submit" value="ok" />
-        <input name="nchash" type="hidden" value="421f03c0" />
-            <h1 class="am-title"><span class="am-tips">无账号，<b><a href="index.php?c=login&op=register&ref_url=https%3A%2F%2Fwww.yuekangsong.com%2F"> 立即注册</a></b></span>HI 欢迎登陆！</h1>
+        <form id="signupForm" method="post" action="/user/login"  class="bg">
+            <input type='hidden' name='formhash' value='PTk4mSSBf0k0Rx8rOJQTs5DkSWGgUUy' />        <input type="hidden" name="form_submit" value="ok" />
+            <input name="nchash" type="hidden" value="421f03c0" />
+            <h1 class="am-title"><span class="am-tips">无账号，<b><a href="/page/regist"> 立即注册</a></b></span>HI 欢迎登陆！</h1>
 
             <div class="form-group has-success has-feedback">
                 <div class="input-group am-form-group"><span class="input-group-addon"><i
@@ -53,7 +54,7 @@
             <div class="am-login-button">
                 <input type="submit" class="btn btn-danger" value="登录" id="btn">
             </div>
-                        <div class="am-other-method clearfix"></div>
+            <div class="am-other-method clearfix"></div>
 
         </form>
         <script type="text/javascript">
