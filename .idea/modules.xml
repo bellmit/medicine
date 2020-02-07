@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/medicine.iml" filepath="$PROJECT_DIR$/.idea/medicine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medince-mapper/medince-mapper.iml" filepath="$PROJECT_DIR$/medince-mapper/medince-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medince-resful/medince-resful.iml" filepath="$PROJECT_DIR$/medince-resful/medince-resful.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-advertising/pharmacy-advertising.iml" filepath="$PROJECT_DIR$/pharmacy-advertising/pharmacy-advertising.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-classify/pharmacy-classify.iml" filepath="$PROJECT_DIR$/pharmacy-classify/pharmacy-classify.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-common/pharmacy-common.iml" filepath="$PROJECT_DIR$/pharmacy-common/pharmacy-common.iml" />

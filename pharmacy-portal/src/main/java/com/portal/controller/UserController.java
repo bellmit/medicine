@@ -1,7 +1,7 @@
-package com.medicine.controller;
+package com.portal.controller;
 
 
-import com.medicine.service.UserService;
+import com.portal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import result.MedicineResult;
-import vo.User;
+import com.taotao.pojo.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -48,7 +48,7 @@ public class UserController {
         }
         //调用服务
         try {
-            result = userService.checkData(param, type);
+            result = userService.checkData(param);
 
         } catch (Exception e) {
             result = MedicineResult.build(500, e.getMessage());

@@ -1,6 +1,6 @@
-package com.medicine.service.impl;
+package com.portal.service.impl;
 
-import com.medicine.service.UserService;
+import com.portal.service.UserService;
 import org.springframework.stereotype.Service;
 import result.MedicineResult;
 import com.taotao.pojo.User;
@@ -17,9 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 @Service
 public class UserServiceImpl implements UserService {
 
-
     @Override
-    public MedicineResult checkData(String content, Integer type) {
+    public MedicineResult checkData(String content) {
         return null;
     }
 

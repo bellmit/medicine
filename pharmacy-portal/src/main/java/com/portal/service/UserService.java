@@ -1,4 +1,4 @@
-package com.medicine.service;
+package com.portal.service;
 
 import result.MedicineResult;
 import com.taotao.pojo.User;
@@ -22,9 +22,9 @@ public interface UserService {
      * 验证是否可以注册
      *
      * @param content
-     * @param type
+     * @param
      */
-    public MedicineResult checkData(String content, Integer type);
+    public MedicineResult checkData(String content);
 
     /**
      * 用户注册  注册根据影响行数判断是否注册成功
