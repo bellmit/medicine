@@ -1,6 +1,6 @@
 package com.portal.service.impl;
 
-import com.advertis.pojo.Contents;
+import com.advertis.pojo.Content;
 import com.portal.service.ContentService;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
@@ -20,10 +20,10 @@ public class ContentServiceImpl implements ContentService {
 
         String result = HttpClientUtil.doGet("http://localhost:8083/content");
         try {
-        List<Contents> contentses = JsonUtils.jsonToList(result, Contents.class);
+        List<Content> contentses = JsonUtils.jsonToList(result, Content.class);
         List<Map> resultList = new ArrayList<>();
         //创建一个jsp页码要求的pojo列表
-        for (Contents tbContent : contentses) {
+        for (Content tbContent : contentses) {
             Map map = new HashMap<>();
             map.put("src", tbContent.getPic());
             map.put("height", 240);
