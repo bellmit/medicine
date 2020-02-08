@@ -939,12 +939,12 @@ catch(e){}
                     <div class="yks-goods-title-nav">
                         <ul id="categorymenu">
                             <li class="current"><a id="tabGoodsIntro"
-                                                   href="#content">商品详情</a></li>
-                            <li><a id="tabGoodsInstructions" href="#content">说明书</a></li>
-                            <li><a id="tabGoodsTraded" href="#content">销售记录
-                                <em>(98 )</em></a></li>
+                                                   href="javascript:void(0);">商品详情</a></li>
+                            <li><a id="tabGoodsInstructions" href="javascript:void(0);">说明书</a></li>
+                            <li><a id="tabGoodsTraded" href="javascript:void(0);">销售记录
+                                <em>(10亿+ )</em></a></li>
                             <li><a id="tabGoodsRate"
-                                   href="#content">累计评价<em>(<span id="appraise"></span>)</em></a>
+                                   href="javascript:void(0);">累计评价<em>(<span id="appraise1"></span>)</em></a>
                             </li>
                         </ul>
                         <div class="switch-bar"><a href="javascript:void(0)" id="fold">&nbsp;</a></div>
@@ -1026,27 +1026,27 @@ catch(e){}
                         <div class="top">
                             <div class="rate">
                                 <p>
-                                    <strong>100</strong><sub>%</sub>好评
+                                    <strong><nobr id="appraiseGoodNum1"></nobr></strong><sub>%</sub>好评
                                 </p>
-                                <span>共有1人参与评分</span></div>
+                                <span>共有<nobr id="appraise3"></nobr>人参与评分</span></div>
                             <div class="percent">
                                 <dl>
-                                    <dt>好评<em>(100%)</em></dt>
+                                    <dt>好评<em>(<nobr style="white-space: nowrap;" id="appraiseGoodNum2"></nobr>%)</em></dt>
                                     <dd>
-                                        <i style="width: 100%"></i>
+                                        <i id="goodLength"></i>
                                     </dd>
                                 </dl>
                                 <dl>
-                                    <dt>中评<em>(0%)</em>
+                                    <dt>中评<em>(<nobr id="appraiseCentreNum"></nobr>%)</em>
                                     </dt>
                                     <dd>
-                                        <i style="width: 0%"></i>
+                                        <i id="centreLength"></i>
                                     </dd>
                                 </dl>
                                 <dl>
-                                    <dt>差评<em>(0%)</em></dt>
+                                    <dt>差评<em>(<nobr id="appraiseBadNum"></nobr>%)</em></dt>
                                     <dd>
-                                        <i style="width: 0%"></i>
+                                        <i id="badLength"></i>
                                     </dd>
                                 </dl>
                             </div>
@@ -1060,20 +1060,23 @@ catch(e){}
                         </div>
                         <div class="yks-goods-title-nav">
                             <ul id="comment_tab">
-                                <li data-type="all" class="current"><a
-                                        href="javascript:void(0);">商品评价 (1)</a></li>
-                                <li data-type="1"><a
-                                        href="javascript:void(0);">好评(1 )</a>
+                                <li data-type="all" class="current"><a id="appraise"
+                                        href="javascript:void(0);">商品评价 (<span id="appraise2"></span>)</a></li>
+                                <li data-type="1"><a id="appGood"
+                                        href="javascript:void(0);">好评(<span id="appraiseGood"></span> )</a>
                                 </li>
-                                <li data-type="2"><a
-                                        href="javascript:void(0);">中评(0 )</a></li>
-                                <li data-type="3"><a
-                                        href="javascript:void(0);">差评(0 )</a>
+                                <li data-type="2"><a id="appCentre"
+                                        href="javascript:void(0);">中评(<span id="appraiseCentre"></span> )</a></li>
+                                <li data-type="3"><a id="appBad"
+                                        href="javascript:void(0);">差评(<span id="appraiseBad"></span> )</a>
                                 </li>
                             </ul>
                         </div>
                         <!-- 商品评价内容部分 -->
-                        <div id="goodseval" class="yks-commend-main"></div>
+                        <div id="goodseval1" class="yks-commend-main"></div>
+                        <div id="goodseval2" class="yks-commend-main"></div>
+                        <div id="goodseval3" class="yks-commend-main"></div>
+                        <div id="goodseval4" class="yks-commend-main"></div>
                     </div>
                 </div>
                 <!--      end -->
@@ -1413,13 +1416,24 @@ catch(e){}
       type="text/css"
       id="cssfile2"/>
 <script type="text/javascript">
+    var total = null;
+
+    var good = true;
+    var centre = true;
+    var bad = true;
+
+    var apprText = true;
+    var goodText = true;
+    var centreText = true;
+    var badText = true;
 
     var itemControl = {
         param:{
             descUrl:"/item/desc/",
             paramUrl:"/item/explain/",
             appraiseUrl:"/item/appraise/",
-            appraiseCountUrl:"/item/appraise/count"
+            appraiseCountUrl:"/item/appraise/count",
+            appraiseNumUrl:"/item/appraise/num/",
         },
         //请求商品描述
         getItemDesc:function(itemId) {
@@ -1438,7 +1452,6 @@ catch(e){}
                 $.get(itemControl.param.paramUrl+itemId, function(data){
                     var data2 = eval('('+data.data+')');
                     var data3 = eval('('+data2.itemExplain+')');
-                    alert(data3.ratify)
                     //返回说明书的html，直接显示到页面
                     $("#name1").append(data3.name);
                     $("#name2").append(data3.name);
@@ -1459,37 +1472,166 @@ catch(e){}
         },
         //请求评价参数
         getItemAppraise:function(itemId) {
-            $.get(itemControl.param.appraiseUrl+itemId, function(data){
-                alert(data.data)
-            });
+            if(apprText) {
+                $.get(itemControl.param.appraiseUrl + itemId + "/" + 0, function (data) {
+                    var data2 = eval('(' + data.data + ')');
+                    data2.forEach(function (e) {
+                        $("#goodseval1").append("--用户：" + e.userName + " </br>");
+                        $("#goodseval1").append("----给出的评价：" + e.appraises + " </br> "+"</br>");
+                    });
+                });
+                apprText = false;
+            }
+        },
+        //请求好评
+        getAppraiseGood:function(itemId) {
+            if(goodText) {
+                $.get(itemControl.param.appraiseUrl + itemId + "/" + 1, function (data) {
+                    var data2 = eval('(' + data.data + ')');
+
+                    data2.forEach(function (e) {
+                        $("#goodseval2").append("--用户：" + e.userName + " </br> ");
+                        $("#goodseval2").append("----给出的评价：" + e.appraises + " </br> "+"</br>");
+                    });
+
+                });
+                goodText = false;
+            }
+        },
+        //请求中评
+        getAppraiseCentre:function(itemId) {
+            if(centreText) {
+                $.get(itemControl.param.appraiseUrl + itemId + "/" + 2, function (data) {
+                    var data2 = eval('(' + data.data + ')');
+                    data2.forEach(function (e) {
+                        $("#goodseval3").append("--用户：" + e.userName + " </br> ");
+                        $("#goodseval3").append("----给出的评价：" + e.appraises + " </br> "+"</br>");
+                    });
+                });
+                centreText = false;
+            }
+        },
+        //请求差评
+        getAppraiseBad:function(itemId) {
+            if(badText) {
+                $.get(itemControl.param.appraiseUrl + itemId + "/" + 3, function (data) {
+                    var data2 = eval('(' + data.data + ')');
+                    data2.forEach(function (e) {
+                        $("#goodseval4").append("--用户：" + e.userName + " </br> ");
+                        $("#goodseval4").append("----给出的评价：" + e.appraises + " </br> "+"</br>");
+                    });
+                });
+                badText = false;
+            }
         },
         //请求评价的总数
         getItemAppraiseCount:function() {
             $.get(itemControl.param.appraiseCountUrl, function(data){
-                alert("总数"+data.data)
-                $("#appraise").append(data.data);
+                total = data.data;
+                $("#appraise1").append(data.data);
+                $("#appraise2").append(data.data);
+                $("#appraise3").append(data.data);
             });
+        },
+        //请求评价的好评数
+        getItemAppraiseGood:function() {
+            if(good) {
+                $.get(itemControl.param.appraiseNumUrl + 1, function (data) {
+                    $("#appraiseGood").append(data.data);
+                    var goodNum = data.data / total * 100;
+                    goodNum = goodNum.toFixed(2);
+                    $("#appraiseGoodNum1").append(goodNum);
+                    $("#appraiseGoodNum2").append(goodNum);
+
+                    var goodLength = document.getElementById("goodLength");
+                    goodLength.style.width = goodNum;
+                });
+                good = false;
+            }
+        },
+        //请求评价的中评数
+        getItemAppraiseCentre:function() {
+            if(centre) {
+                $.get(itemControl.param.appraiseNumUrl + 2, function (data) {
+                    $("#appraiseCentre").append(data.data);
+                    var centreNum = data.data / total * 100;
+                    centreNum = centreNum.toFixed(2);
+                    $("#appraiseCentreNum").append(centreNum);
+
+                    var centreLength = document.getElementById("centreLength");
+                    centreLength.style.width = centreNum;
+                });
+                centre = false;
+            }
+        },
+        //请求评价的差评数
+        getItemAppraiseBad:function() {
+            if(bad) {
+                $.get(itemControl.param.appraiseNumUrl + 3, function (data) {
+                    $("#appraiseBad").append(data.data);
+                    var badNum = data.data / total * 100;
+                    badNum = badNum.toFixed(2);
+                    $("#appraiseBadNum").append(badNum);
+
+                    var badLength = document.getElementById("badLength");
+                    badLength.style.width = badNum;
+                });
+                bad = false;
+            }
         }
     };
     $(function(){
         //取商品id
         var itemId = "${med.id}";
-        //给说明书参数tab页绑定事件
-        $("#tabGoodsInstructions").bind("click", function(){
-            itemControl.getItemParam(itemId);
-        });
-
+        $("#goodseval2").css("display","none");//隐藏
+        $("#goodseval3").css("display","none");//隐藏
+        $("#goodseval4").css("display","none");//隐藏
         //给评价参数tab页绑定事件
-        $("#tabGoodsRate").bind("click", function(){
-
+        $("#appraise").bind("click", function(){
+            $("#goodseval1").css("display","block");//显示
+            $("#goodseval2").css("display","none");//隐藏
+            $("#goodseval3").css("display","none");//隐藏
+            $("#goodseval4").css("display","none");//隐藏
             itemControl.getItemAppraise(itemId);
+        });
+        //给好评参数tab页绑定事件
+        $("#appGood").bind("click", function(){
+            $("#goodseval1").css("display","none");//隐藏
+            $("#goodseval2").css("display","block");//显示
+            $("#goodseval3").css("display","none");//隐藏
+            $("#goodseval4").css("display","none");//隐藏
+            itemControl.getAppraiseGood(itemId);
+        });
+        //给中评参数tab页绑定事件
+        $("#appCentre").bind("click", function(){
+            $("#goodseval1").css("display","none");//隐藏
+            $("#goodseval2").css("display","none");//隐藏
+            $("#goodseval3").css("display","block");//显示
+            $("#goodseval4").css("display","none");//隐藏
+            itemControl.getAppraiseCentre(itemId);
+        });
+        //给差评参数tab页绑定事件
+        $("#appBad").bind("click", function(){
+            $("#goodseval1").css("display","none");//隐藏
+            $("#goodseval2").css("display","none");//隐藏
+            $("#goodseval3").css("display","none");//隐藏
+            $("#goodseval4").css("display","block");//显示
+            itemControl.getAppraiseBad(itemId);
         });
 
         //延迟一秒加载商品描述信息
         setTimeout(function(){
             itemControl.getItemDesc(itemId);
-            itemControl.getItemAppraiseCount();
         },1000);
+
+        setTimeout(function(){
+            itemControl.getItemParam(itemId);
+            itemControl.getItemAppraise(itemId);
+            itemControl.getItemAppraiseCount();
+            itemControl.getItemAppraiseGood();
+            itemControl.getItemAppraiseCentre();
+            itemControl.getItemAppraiseBad();
+        },1500);
     });
 
 </script>

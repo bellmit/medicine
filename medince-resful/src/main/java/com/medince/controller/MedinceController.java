@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.medince.service.inteface.MedinceService;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/medin")
 public class MedinceController {
@@ -40,15 +42,20 @@ public class MedinceController {
 	}
 
 	//查询药品的评价
-	@RequestMapping("/queryAppraise/{drugId}")
-	public Appraise queryAppraise(@PathVariable String drugId) {
-		return meService.queryAppraise(drugId);
+	@RequestMapping("/queryAppraise/{drugId}/{rank}")
+	public List<Appraise> queryAppraise(@PathVariable String drugId,@PathVariable("rank")Integer rank) {
+		return meService.queryAppraise(drugId,rank);
 	}
 
     //查询评价总数
     @RequestMapping("/queryAppraise/count")
     public Integer queryAppraise() {
-        return meService.queryAppraiseCount();
+	    return meService.queryAppraiseCount();
     }
 
+    //查询好中差评的个数
+    @RequestMapping("/queryAppraise/num/{id}")
+    public Integer queryAppraiseNum(@PathVariable("id")Integer id){
+	    return meService.queryAppraiseNum(id);
+    }
 }
