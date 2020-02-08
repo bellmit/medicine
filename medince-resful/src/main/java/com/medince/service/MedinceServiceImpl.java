@@ -57,8 +57,8 @@ public class MedinceServiceImpl implements MedinceService{
 		Criteria cr = 	example.createCriteria();
 		cr.andItemIdEqualTo(itemId);
 		
-		List<ItemDesc> list = itemMapper.selectByExample(example);
-		
+		List<ItemDesc> list = itemMapper.selectByExampleWithBLOBs(example);
+
 		if(list != null && list.size()>0) {
 			return list.get(0);
 		}
@@ -105,4 +105,15 @@ public class MedinceServiceImpl implements MedinceService{
 		
 		return appraise;
 	}
+
+    @Override
+    public Integer queryAppraiseCount() {
+
+        int count = appMapper.count();
+        System.out.println(count);
+        if("".equals(count)){
+            return 0;
+        }
+        return count;
+    }
 }

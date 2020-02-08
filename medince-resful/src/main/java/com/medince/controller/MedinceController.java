@@ -44,4 +44,11 @@ public class MedinceController {
 	public Appraise queryAppraise(@PathVariable String drugId) {
 		return meService.queryAppraise(drugId);
 	}
+
+    //查询评价总数
+    @RequestMapping("/queryAppraise/count")
+    public Integer queryAppraise() {
+        return meService.queryAppraiseCount();
+    }
+
 }

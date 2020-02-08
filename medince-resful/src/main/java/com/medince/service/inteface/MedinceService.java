@@ -22,4 +22,6 @@ public interface MedinceService {
 	//查询药品的评价
 	public Appraise queryAppraise(String drugId);
 
+	//查询评价的总条数
+    public Integer queryAppraiseCount();
 }

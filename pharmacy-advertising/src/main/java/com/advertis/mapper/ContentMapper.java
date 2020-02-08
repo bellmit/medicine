@@ -1,7 +1,7 @@
 package com.advertis.mapper;
 
-import com.advertis.pojo.Content;
-import com.advertis.pojo.ContentExample;
+import pojo.Content;
+import pojo.ContentExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

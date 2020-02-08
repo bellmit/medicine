@@ -1,6 +1,6 @@
 package com.portal.service.impl;
 
-import com.advertis.pojo.Content;
+import pojo.Content;
 import com.portal.service.ContentService;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;

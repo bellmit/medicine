@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.advertis.mapper.MedicineMessageMapper" >
-  <resultMap id="BaseResultMap" type="com.advertis.pojo.MedicineMessage" >
+  <resultMap id="BaseResultMap" type="pojo.MedicineMessage" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="item_id" property="itemId" jdbcType="VARCHAR" />
     <result column="item_name" property="itemName" jdbcType="VARCHAR" />
@@ -80,7 +80,7 @@
     id, item_id, item_name, item_brand, item_stack, item_bazaar, item_membership, item_promotion, 
     status, param_item, pai, num, cid, created, updated
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.advertis.pojo.MedicineMessageExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="pojo.MedicineMessageExample" >
     select
     <if test="distinct" >
       distinct
@@ -104,13 +104,13 @@
     delete from medicine_message
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.advertis.pojo.MedicineMessageExample" >
+  <delete id="deleteByExample" parameterType="pojo.MedicineMessageExample" >
     delete from medicine_message
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.advertis.pojo.MedicineMessage" >
+  <insert id="insert" parameterType="pojo.MedicineMessage" >
     insert into medicine_message (id, item_id, item_name, 
       item_brand, item_stack, item_bazaar, 
       item_membership, item_promotion, status, 
@@ -124,7 +124,7 @@
       #{cid,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.advertis.pojo.MedicineMessage" >
+  <insert id="insertSelective" parameterType="pojo.MedicineMessage" >
     insert into medicine_message
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -221,7 +221,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.advertis.pojo.MedicineMessageExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="pojo.MedicineMessageExample" resultType="java.lang.Integer" >
     select count(*) from medicine_message
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -301,7 +301,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.advertis.pojo.MedicineMessage" >
+  <update id="updateByPrimaryKeySelective" parameterType="pojo.MedicineMessage" >
     update medicine_message
     <set >
       <if test="itemId != null" >
@@ -349,7 +349,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.advertis.pojo.MedicineMessage" >
+  <update id="updateByPrimaryKey" parameterType="pojo.MedicineMessage" >
     update medicine_message
     set item_id = #{itemId,jdbcType=VARCHAR},
       item_name = #{itemName,jdbcType=VARCHAR},

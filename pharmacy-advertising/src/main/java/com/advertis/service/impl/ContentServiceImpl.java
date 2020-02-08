@@ -1,8 +1,8 @@
 package com.advertis.service.impl;
 
 import com.advertis.mapper.ContentMapper;
-import com.advertis.pojo.Content;
-import com.advertis.pojo.MedicineMessage;
+import pojo.Content;
+import pojo.MedicineMessage;
 import com.advertis.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +17,7 @@ public class ContentServiceImpl implements ContentService {
 
     @Autowired
     private ContentMapper contentMapper;
+
     @Override
     public List<Content> getContentList() {
 
@@ -29,7 +30,7 @@ public class ContentServiceImpl implements ContentService {
     public Content getContentList1() {
 
         System.out.println(2);
-       Content contents = contentMapper.selectByPrimaryKey(null);
+       Content contents = contentMapper.selectByPrimaryKey(1L);
         System.out.println(1);
         System.out.println(contents);
         return  contents;

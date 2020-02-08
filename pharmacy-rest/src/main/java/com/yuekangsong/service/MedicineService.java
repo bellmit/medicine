@@ -1,21 +1,21 @@
 package com.yuekangsong.service;
 
-import vo.*;
+import com.taotao.pojo.*;
 
 public interface MedicineService {
 
     //查询药品的基本信息
-    public MedicineMessage query(String itemId);
+    public MedicineMessage query(Integer itemId);
 
     //查询商品的详情信息
-    public ItemDesc queryDesc(String itemId);
+    public String queryDesc(String itemId);
 
     //查询药品的说明书
-    public ItemExplain queryExplain(String itemId);
+    public String queryExplain(String itemId);
 
     //查询药品的销售记录
-    public Sales querySales(String itemId);
+    public String querySales(String itemId);
 
     //查询药品的评价
-    public Appraise queryAppraise(String drugId);
+    public String queryAppraise(String drugId);
 }
