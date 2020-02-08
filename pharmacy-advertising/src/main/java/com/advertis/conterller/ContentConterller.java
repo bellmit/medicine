@@ -5,6 +5,8 @@ import com.taotao.pojo.Content;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import result.MedinceResult;
 
 import java.util.List;
 
@@ -17,7 +19,17 @@ public class ContentConterller {
     private ContentService contentService;
 
     @RequestMapping("/content")
-    public List<Content> getContentList(){
-      return  contentService.getContentList();
+    @ResponseBody
+    public MedinceResult getContentList(){
+
+        try {
+            List<Content> contentList = contentService.getContentList();
+            System.out.println(contentList);
+            return MedinceResult.ok(contentList);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return MedinceResult.build(500, e.getMessage());
+        }
+
     }
 }
