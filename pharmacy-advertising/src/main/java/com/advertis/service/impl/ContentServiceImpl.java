@@ -1,9 +1,9 @@
 package com.advertis.service.impl;
 
-import com.advertis.mapper.ContentMapper;
-import pojo.Content;
-import pojo.MedicineMessage;
 import com.advertis.service.ContentService;
+import com.medince.mapper.ContentMapper;
+import com.taotao.pojo.Content;
+import com.taotao.pojo.MedicineMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

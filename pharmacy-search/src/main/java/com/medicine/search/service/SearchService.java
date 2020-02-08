@@ -3,7 +3,6 @@ package com.medicine.search.service;
 
 import result.MedicineResult;
 import result.SearchResult;
-import vo.MedicineMessage;
 
 /**
  * Created by Lenovo on 2020/1/20.

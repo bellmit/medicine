@@ -53,11 +53,6 @@
           <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.1" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.2" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.21" />
-          <element id="archive" name="pharmacy-advertising-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="pharmacy-advertising" />
-          </element>
-          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.9" />
-          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" />
         </element>
       </element>
       <element id="directory" name="META-INF">

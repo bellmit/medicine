@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/medicine.iml" filepath="$PROJECT_DIR$/.idea/medicine.iml" />
       <module fileurl="file://$PROJECT_DIR$/medince-mapper/medince-mapper.iml" filepath="$PROJECT_DIR$/medince-mapper/medince-mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/medince-resful/medince-resful.iml" filepath="$PROJECT_DIR$/medince-resful/medince-resful.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-advertising/pharmacy-advertising.iml" filepath="$PROJECT_DIR$/pharmacy-advertising/pharmacy-advertising.iml" />
@@ -12,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/pharmacy-portal/pharmacy-portal.iml" filepath="$PROJECT_DIR$/pharmacy-portal/pharmacy-portal.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-rest/pharmacy-rest.iml" filepath="$PROJECT_DIR$/pharmacy-rest/pharmacy-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/pharmacy-search/pharmacy-search.iml" filepath="$PROJECT_DIR$/pharmacy-search/pharmacy-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pharmacy_frontend.iml" filepath="$PROJECT_DIR$/pharmacy_frontend.iml" />
     </modules>
   </component>
 </project>
