@@ -1,6 +1,7 @@
 package com.yuekangsong.service;
 
 import com.taotao.pojo.*;
+import pojo.MedicineMessage;
 
 public interface MedicineService {
 
