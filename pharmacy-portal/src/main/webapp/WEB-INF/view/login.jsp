@@ -28,7 +28,7 @@
             <div class="form-group has-success has-feedback">
                 <div class="input-group am-form-group"><span class="input-group-addon"><i
                         class="glyphicon glyphicon-user"></i></span>
-                    <input type="text" class="form-control username" id="username" value="" name="user_name" placeholder="请输入手机号/用户名/邮箱">
+                    <input type="text" class="form-control username" id="username" value="" name="username" placeholder="请输入手机号/用户名/邮箱">
                 </div>
                 <span class="glyphicon glyphicon-ok-sign form-control-feedback" aria-hidden="true"></span> <span
                     class="glyphicon glyphicon-remove-sign form-control-feedback red-icon" aria-hidden="true"></span>

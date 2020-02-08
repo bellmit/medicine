@@ -3,8 +3,8 @@ package com.medince.service.inteface;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.medince.utils.MedicineResult;
 import com.taotao.pojo.User;
+import result.MedicineResult;
 
 public interface UserService {
 

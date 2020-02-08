@@ -31,8 +31,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public MedicineResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response) {
-        String json = HttpClientUtil.doGet("http://localhost:8081/user/userLogin"+username+password+request+response);
-      MedicineResult medicineMessage = JsonUtils.jsonToPojo(json,MedicineResult.class);
+        System.out.println("username"+username);
+        System.out.println("pass"+password);
+        String s = "http://localhost:8080/aa/user/userLogin/" + username +"/"+ password;
+        System.out.println(s);
+        String json = HttpClientUtil.doGet(s);
+        System.out.println("====" + json);
+        MedicineResult medicineMessage = JsonUtils.jsonToPojo(json, MedicineResult.class);
         return medicineMessage;
     }
 

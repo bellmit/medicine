@@ -16,84 +16,84 @@ import com.taotao.pojo.ItemDescExample.Criteria;
 
 @Service
 public class MedinceServiceImpl implements MedinceService{
-	
-	@Autowired
-	MedicineMessageMapper mediMapper;
-	
-	@Autowired
-	ItemDescMapper itemMapper;
-	
-	@Autowired
-	ItemExplainMapper explinMapper;
-	
-	@Autowired
-	SalesMapper saleMapper;
-	
-	@Autowired
-	AppraiseMapper appMapper;
-	
 
-	@Override
-	public MedicineMessage query(String itemid) {
-		
-		MedicineMessage me = mediMapper.selectByPrimaryKey(Integer.valueOf(itemid));
-		
-		return me;
-		
-	}
+    @Autowired
+    MedicineMessageMapper mediMapper;
 
-	@Override
-	public ItemDesc queryDesc(String itemId) {
-		// TODO Auto-generated method stub
-		
-		ItemDescExample example = new ItemDescExample();
-		Criteria cr = 	example.createCriteria();
-		cr.andItemIdEqualTo(itemId);
-		
-		List<ItemDesc> list = itemMapper.selectByExampleWithBLOBs(example);
+    @Autowired
+    ItemDescMapper itemMapper;
 
-		if(list != null && list.size()>0) {
-			return list.get(0);
-		}
-		
-		return null;
-	}
+    @Autowired
+    ItemExplainMapper explinMapper;
 
-	@Override
-	public ItemExplain queryExplain(String itemId) {
-		// TODO Auto-generated method stub
-		
-		ItemExplainExample example = new ItemExplainExample();
-		
-		com.taotao.pojo.ItemExplainExample.Criteria cri = example.createCriteria();
-		
-		List<ItemExplain> list = explinMapper.selectByExample(example);
-		
-		if(list != null && list.size()>0) {
-			return list.get(0);
-		}
-		return null;
-	}
+    @Autowired
+    SalesMapper saleMapper;
 
-	@Override
-	public Sales querySales(String itemId) {
-		// TODO Auto-generated method stub
-		
-		SalesExample example = new SalesExample();
-		com.taotao.pojo.SalesExample.Criteria cri = example.createCriteria();
-		cri.andItemIdEqualTo(itemId);
-		
-		List<Sales> list = saleMapper.selectByExample(example);
-		
-		if(list != null && list.size()>0) {
-			return list.get(0);
-		}
-		return null;
-	}
+    @Autowired
+    AppraiseMapper appMapper;
 
-	@Override
-	public List<Appraise> queryAppraise(String drugId,Integer rank) {
-		// TODO Auto-generated method stub
+
+    @Override
+    public MedicineMessage query(String itemid) {
+
+        MedicineMessage me = mediMapper.selectByPrimaryKey(Integer.valueOf(itemid));
+
+        return me;
+
+    }
+
+    @Override
+    public ItemDesc queryDesc(String itemId) {
+        // TODO Auto-generated method stub
+
+        ItemDescExample example = new ItemDescExample();
+        Criteria cr = 	example.createCriteria();
+        cr.andItemIdEqualTo(itemId);
+
+        List<ItemDesc> list = itemMapper.selectByExampleWithBLOBs(example);
+
+        if(list != null && list.size()>0) {
+            return list.get(0);
+        }
+
+        return null;
+    }
+
+    @Override
+    public ItemExplain queryExplain(String itemId) {
+        // TODO Auto-generated method stub
+
+        ItemExplainExample example = new ItemExplainExample();
+
+        com.taotao.pojo.ItemExplainExample.Criteria cri = example.createCriteria();
+
+        List<ItemExplain> list = explinMapper.selectByExample(example);
+
+        if(list != null && list.size()>0) {
+            return list.get(0);
+        }
+        return null;
+    }
+
+    @Override
+    public Sales querySales(String itemId) {
+        // TODO Auto-generated method stub
+
+        SalesExample example = new SalesExample();
+        com.taotao.pojo.SalesExample.Criteria cri = example.createCriteria();
+        cri.andItemIdEqualTo(itemId);
+
+        List<Sales> list = saleMapper.selectByExample(example);
+
+        if(list != null && list.size()>0) {
+            return list.get(0);
+        }
+        return null;
+    }
+
+    @Override
+    public List<Appraise> queryAppraise(String drugId,Integer rank) {
+        // TODO Auto-generated method stub
 
         AppraiseExample example = new AppraiseExample();
         AppraiseExample.Criteria criteria = example.createCriteria();
@@ -104,7 +104,7 @@ public class MedinceServiceImpl implements MedinceService{
         List<Appraise> list = appMapper.selectByExample(example);
 
         return list;
-	}
+    }
 
     @Override
     public Integer queryAppraiseCount() {

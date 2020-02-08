@@ -37,5 +37,4 @@ public interface AppraiseMapper {
 
     @Select("select count(*) from appraise where rank = ${id}")
     int num(@Param("id")Integer id);
-
 }

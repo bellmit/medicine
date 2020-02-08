@@ -225,8 +225,4 @@
       rank = #{rank,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
-    <!--<select id="count"  resultType="java.lang.Integer">
-        SELECT count(*) FROM
-        appraise
-    </select>-->
 </mapper>

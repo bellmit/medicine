@@ -4,16 +4,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.medince.service.inteface.MedinceService;
 import com.medince.service.inteface.UserService;
-import com.medince.utils.MedicineResult;
-import com.taotao.pojo.MedicineMessage;
 import com.taotao.pojo.User;
+import result.MedicineResult;
 
 @RestController
 @RequestMapping("/user")
@@ -35,9 +33,10 @@ public class UserController {
 		return userService.createUser(user);
 	}
 	
-	@RequestMapping("/userLogin/{username}/{password}/{request}/{response}")
-	public MedicineResult userLogin(String username, String password, HttpServletRequest request,HttpServletResponse response) {
-		System.out.println("进入接口Controller");
+	@RequestMapping("/userLogin/{username}/{password}")
+	public MedicineResult userLogin(@PathVariable("username") String username,@PathVariable("password") String password,
+                                    HttpServletRequest request,HttpServletResponse response) {
+		
 		return userService.userLogin(username, password, request, response);
 	}
 	

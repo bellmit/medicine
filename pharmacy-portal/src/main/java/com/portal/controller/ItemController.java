@@ -19,6 +19,7 @@ public class ItemController {
     @RequestMapping("/message/{itemId}")
     public String queryMessage(@PathVariable Integer itemId, Model model) {
         String json = HttpClientUtil.doGet("http://localhost:8085/item/message/" + itemId);
+        System.out.println(json);
         MedicineMessage medicineMessage = JsonUtils.jsonToPojo(json, MedicineMessage.class);
         model.addAttribute("med",medicineMessage);
         return "item";

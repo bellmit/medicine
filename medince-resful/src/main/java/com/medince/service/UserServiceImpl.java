@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
 
 import com.medince.mapper.UserMapper;
 import com.medince.service.inteface.UserService;
-import com.medince.utils.MedicineResult;
 import com.taotao.pojo.User;
 import com.taotao.pojo.UserExample;
 import com.taotao.pojo.UserExample.Criteria;
+import result.MedicineResult;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -29,8 +29,9 @@ public class UserServiceImpl implements UserService{
 		record.setUserId(2L);
 		record.setUserName(username);
 		record.setPassword(pasword);
-
+		
 		userMapper.insert(record);
+		
 		return username;
 	}
 
@@ -72,7 +73,7 @@ public class UserServiceImpl implements UserService{
 		cr.andPasswordEqualTo(password);
 		
 		List<User> list = userMapper.selectByExample(example);
-		System.out.println(list);
+		
 		if (list.size()>0) {
 			return MedicineResult.build(500, "用户名或密码错误");
 		}
