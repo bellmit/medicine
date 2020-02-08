@@ -3,6 +3,7 @@ package com.medince.mapper;
 import com.taotao.pojo.Content;
 import com.taotao.pojo.ContentExample;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public interface ContentMapper {
 
     List<Content> selectByExample(ContentExample example);
 
+    @Select("select * from content")
     List<Content> selectAll();
 
     Content selectByPrimaryKey(Long id);
