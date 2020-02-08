@@ -17,5 +17,5 @@ public interface MedicineService {
     public String querySales(String itemId);
 
     //查询药品的评价
-    public String queryAppraise(String drugId);
+    public String queryAppraise(String drugId,Integer rank);
 }

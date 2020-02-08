@@ -60,10 +60,9 @@ public class MedicineServiceImpl implements MedicineService {
      * @return
      */
     @Override
-    public String queryAppraise(String drugId) {
-        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryAppraise/" + drugId);
+    public String queryAppraise(String drugId,Integer rank) {
+        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryAppraise/" + drugId+"/"+rank);
         return data;
     }
-
 
 }

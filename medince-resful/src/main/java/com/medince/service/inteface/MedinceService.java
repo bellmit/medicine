@@ -6,6 +6,8 @@ import com.taotao.pojo.ItemExplain;
 import com.taotao.pojo.MedicineMessage;
 import com.taotao.pojo.Sales;
 
+import java.util.List;
+
 public interface MedinceService {
 
 	MedicineMessage query(String itemid);
@@ -20,8 +22,14 @@ public interface MedinceService {
 	public Sales querySales(String itemId);
 
 	//查询药品的评价
-	public Appraise queryAppraise(String drugId);
+	public List<Appraise> queryAppraise(String drugId,Integer rank);
+
+	//查询商品不同的评价
+    public List<Appraise> queryAppraiseGcb(Integer rank);
 
 	//查询评价的总条数
     public Integer queryAppraiseCount();
+
+    //查询各个评价的个数
+    public Integer queryAppraiseNum(Integer id);
 }

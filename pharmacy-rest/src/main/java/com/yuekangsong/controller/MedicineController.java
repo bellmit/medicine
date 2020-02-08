@@ -63,9 +63,9 @@ public class MedicineController {
      * @param drugId
      * @return
      */
-    @RequestMapping(value = "/appraise/{drugId}",produces = "application/json; charset=utf-8")
-    public String queryAppraise(@PathVariable String drugId){
-        String data = medicineService.queryAppraise(drugId);
+    @RequestMapping(value = "/appraise/{drugId}/{rank}",produces = "application/json; charset=utf-8")
+    public String queryAppraise(@PathVariable String drugId,@PathVariable Integer rank){
+        String data = medicineService.queryAppraise(drugId,rank);
         return data;
     }
 }
