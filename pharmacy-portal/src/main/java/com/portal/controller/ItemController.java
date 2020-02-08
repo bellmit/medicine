@@ -1,6 +1,5 @@
 package com.portal.controller;
 
-import com.taotao.pojo.Appraise;
 import com.taotao.pojo.MedicineMessage;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
@@ -63,15 +62,6 @@ public class ItemController {
     @ResponseBody
     public MedinceResult queryAppraiseNum(@PathVariable Integer id){
         String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryAppraise/num/"+id);
-        return MedinceResult.ok(data);
-    }
-
-
-    //不同商品的不同评价
-    @RequestMapping(value = "/appraise/gcb/{id}",produces = "application/json; charset=utf-8")
-    @ResponseBody
-    public MedinceResult queryAppraiseGcb(@PathVariable Integer id){
-        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryAppraise/gcb/"+id);
         return MedinceResult.ok(data);
     }
 

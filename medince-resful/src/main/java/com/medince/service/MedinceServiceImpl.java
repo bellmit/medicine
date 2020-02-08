@@ -107,17 +107,6 @@ public class MedinceServiceImpl implements MedinceService{
 	}
 
     @Override
-    public List<Appraise> queryAppraiseGcb(Integer rank) {
-        AppraiseExample example = new AppraiseExample();
-        AppraiseExample.Criteria criteria = example.createCriteria();
-        criteria.andRankEqualTo(rank);
-
-        List<Appraise> list = appMapper.selectByExample(example);
-
-        return list;
-    }
-
-    @Override
     public Integer queryAppraiseCount() {
 
         int count = appMapper.count();

@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="04a523f8-4b15-45d2-b82c-1fac3ad8c79c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/MedinceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/MedinceServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharmacy-portal/src/main/webapp/WEB-INF/view/item.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/pharmacy-portal/src/main/webapp/WEB-INF/view/item.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/controller/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/controller/MedicineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,19 +65,19 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="html" value="1" />
-          <entry key="java" value="5327" />
-          <entry key="jsp" value="2075" />
+          <entry key="java" value="5328" />
+          <entry key="jsp" value="2079" />
           <entry key="properties" value="15" />
-          <entry key="txt" value="120" />
+          <entry key="txt" value="141" />
           <entry key="xml" value="637" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="5327" />
-          <entry key="JSP" value="2074" />
-          <entry key="PLAIN_TEXT" value="127" />
+          <entry key="JAVA" value="5328" />
+          <entry key="JSP" value="2078" />
+          <entry key="PLAIN_TEXT" value="148" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="637" />
         </counts>
@@ -96,7 +90,7 @@
           <entry key="htm" value="2" />
           <entry key="html" value="7" />
           <entry key="iml" value="3" />
-          <entry key="java" value="118" />
+          <entry key="java" value="122" />
           <entry key="js" value="11" />
           <entry key="jsp" value="4" />
           <entry key="properties" value="6" />
@@ -109,7 +103,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="9" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="118" />
+          <entry key="JAVA" value="122" />
           <entry key="JSP" value="4" />
           <entry key="JavaScript" value="11" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -127,22 +121,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/controller/MedicineController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="61" column="14" lean-forward="true" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pharmacy-portal/src/main/webapp/WEB-INF/view/item.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="1509" column="19" lean-forward="true" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
+            <state relative-caret-position="202">
+              <caret line="1477" column="48" selection-start-line="1477" selection-start-column="48" selection-end-line="1477" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#em#0;n#dt#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#0;n#div#2;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -150,25 +132,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="45" column="104" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
+            <state relative-caret-position="363">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -258,14 +229,14 @@
         <option value="$PROJECT_DIR$/pharmacy-rest/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.xml" />
         <option value="$PROJECT_DIR$/medince-mapper/src/main/java/com/medince/mapper/AppraiseMapper.java" />
-        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java" />
-        <option value="$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineService.java" />
         <option value="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/service/MedicineServiceImpl.java" />
         <option value="$PROJECT_DIR$/pharmacy-rest/src/main/java/com/yuekangsong/controller/MedicineController.java" />
-        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java" />
-        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/MedinceServiceImpl.java" />
         <option value="$PROJECT_DIR$/pharmacy-portal/src/main/webapp/WEB-INF/view/item.jsp" />
+        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/MedinceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java" />
+        <option value="$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java" />
+        <option value="$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java" />
       </list>
     </option>
   </component>
@@ -330,213 +301,7 @@
             <path>
               <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-mapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
               <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="medince" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="medince" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="medince" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="medince-resful" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="medince" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="inteface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuekangsong" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuekangsong" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pharmacy_frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pharmacy_frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="pharmacy-rest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuekangsong" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -552,7 +317,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581142237715" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581142825717" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../taotao-parent" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -691,7 +456,7 @@
       <workItem from="1580706390786" duration="15359000" />
       <workItem from="1580793781131" duration="11410000" />
       <workItem from="1580878417812" duration="34822000" />
-      <workItem from="1581126014031" duration="15880000" />
+      <workItem from="1581126014031" duration="16556000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578413779745</created>
@@ -777,17 +542,24 @@
       <option name="project" value="LOCAL" />
       <updated>1581126417749</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="药品详情、说明书、评价 已完">
+      <created>1581142353331</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581142353331</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188943000" />
+    <option name="totallyTimeSpent" value="189619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.22919819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.22919819" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -797,7 +569,7 @@
       <window_info id="Web" order="7" sideWeight="0.5008881" side_tool="true" weight="0.22768533" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.14449918" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.057471264" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.057471264" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -896,7 +668,8 @@
     <MESSAGE value="完成" />
     <MESSAGE value="整加商品详情的接口及整合" />
     <MESSAGE value="改动广告" />
-    <option name="LAST_COMMIT_MESSAGE" value="改动广告" />
+    <MESSAGE value="药品详情、说明书、评价 已完" />
+    <option name="LAST_COMMIT_MESSAGE" value="药品详情、说明书、评价 已完" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1268,32 +1041,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="45" column="104" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/MedinceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+        <state relative-caret-position="608">
+          <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1302,17 +1053,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/service/inteface/MedinceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="24" column="68" lean-forward="true" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        <state relative-caret-position="230">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medince-resful/src/main/java/com/medince/controller/MedinceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pharmacy-portal/src/main/webapp/WEB-INF/view/item.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="1509" column="19" lean-forward="true" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
+        <state relative-caret-position="202">
+          <caret line="1477" column="48" selection-start-line="1477" selection-start-column="48" selection-end-line="1477" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#span#0;n#em#0;n#dt#0;n#dl#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#0;n#div#2;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pharmacy-portal/src/main/java/com/portal/controller/ItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

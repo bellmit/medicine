@@ -58,10 +58,4 @@ public class MedinceController {
     public Integer queryAppraiseNum(@PathVariable("id")Integer id){
 	    return meService.queryAppraiseNum(id);
     }
-
-    ////查询商品不同的评价
-    @RequestMapping("/queryAppraise/gcb/{id}")
-    public List<Appraise> queryAppraiseGcb(@PathVariable("id") Integer id){
-	    return meService.queryAppraiseGcb(id);
-    }
 }
