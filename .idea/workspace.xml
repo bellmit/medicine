@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04a523f8-4b15-45d2-b82c-1fac3ad8c79c" name="Default Changelist" comment="华哥" />
+    <list default="true" id="04a523f8-4b15-45d2-b82c-1fac3ad8c79c" name="Default Changelist" comment="华哥">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/pharmacy-common/target/" />
@@ -1013,7 +1016,7 @@
       <workItem from="1580879935551" duration="30427000" />
       <workItem from="1581086826344" duration="15757000" />
       <workItem from="1581138879143" duration="4989000" />
-      <workItem from="1581144583901" duration="2358000" />
+      <workItem from="1581144583901" duration="2471000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578413779745</created>
@@ -1078,11 +1081,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581146724513</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="华哥">
+      <created>1581146956253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581146956253</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119024000" />
+    <option name="totallyTimeSpent" value="119137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1198,13 +1208,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pharmacy-advertising/src/main/java/com/advertis/conterller/ContentConterller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pharmacy-common/src/main/java/json/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
@@ -1576,6 +1579,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2211">
           <caret line="79" column="42" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-495">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
