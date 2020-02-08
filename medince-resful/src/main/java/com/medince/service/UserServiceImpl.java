@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService{
 		
 		List<User> list = userMapper.selectByExample(example);
 		
-		if (list.size()>0) {
+		if (list.size()==0) {
 			return MedicineResult.build(500, "用户名或密码错误");
 		}
 		
