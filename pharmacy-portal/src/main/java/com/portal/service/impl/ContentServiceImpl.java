@@ -18,7 +18,7 @@ import java.util.Map;
 public class ContentServiceImpl implements ContentService {
     public String getContentList(){
 
-        String result = HttpClientUtil.doGet("http://localhost:8083/content");
+        String result = HttpClientUtil.doGet("http://localhost:8083/advertising/content");
         try {
         List<Content> contentses = JsonUtils.jsonToList(result, Content.class);
         List<Map> resultList = new ArrayList<>();
