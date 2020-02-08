@@ -45,7 +45,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>taotao-manager</servlet-name>
-    <url-pattern>/rest/*</url-pattern>
+    <url-pattern>/advertising/*</url-pattern>
   </servlet-mapping>
 </web-app>
 

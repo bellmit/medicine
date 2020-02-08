@@ -32,10 +32,10 @@
         <!--注入数据源-->
         <property name="dataSource" ref="dataSource"/>
         <!--加载映射文件-->
-        <property name="mapperLocations" value="classpath:com/advertis/mapper/*.xml"/>
+        <property name="mapperLocations" value="classpath:com/medince/mapper/*.xml"/>
     </bean>
     <!-- 配置扫描包，加载mapper接口类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.advertis.mapper"></property>
+        <property name="basePackage" value="com.medince.mapper"></property>
     </bean>
 </beans>

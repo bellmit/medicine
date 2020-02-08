@@ -27,23 +27,10 @@ public class ContentServiceImpl implements ContentService {
         System.out.println(contents);
         return  contents;
     }
-    public Content getContentList1() {
-
-        System.out.println(2);
-       Content contents = contentMapper.selectByPrimaryKey(1L);
-        System.out.println(1);
-        System.out.println(contents);
-        return  contents;
-    }
 
     @Override
     public List<MedicineMessage> getMedicineStatus() {
         return null;
     }
 
-    public static void main(String[] args) {
-        ContentServiceImpl  c=new ContentServiceImpl();
-        //c.getContentList();
-        c.getContentList1();
-    }
 }
