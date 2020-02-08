@@ -2,13 +2,36 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="medince-mapper" />
         <module name="medince-resful" />
+        <module name="pharmacy-advertising" />
+        <module name="pharmacy-classify" />
+        <module name="pharmacy-common" />
+        <module name="pharmacy-order" />
+        <module name="pharmacy-portal" />
+        <module name="pharmacy-rest" />
+        <module name="pharmacy-search" />
         <module name="pharmacyadvertising" />
         <module name="pharmacyclassify" />
         <module name="pharmacycommon" />
@@ -18,5 +41,17 @@
         <module name="pharmacysearch" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="medicine" target="1.8" />
+      <module name="medince-mapper" target="1.5" />
+      <module name="medince-resful" target="1.8" />
+      <module name="pharmacy-advertising" target="1.8" />
+      <module name="pharmacy-classify" target="1.8" />
+      <module name="pharmacy-common" target="1.8" />
+      <module name="pharmacy-order" target="1.8" />
+      <module name="pharmacy-portal" target="1.8" />
+      <module name="pharmacy-rest" target="1.8" />
+      <module name="pharmacy-search" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
