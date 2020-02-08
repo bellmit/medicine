@@ -1,14 +1,12 @@
 package result;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * Created by lenovo on 2019/12/8.
- */
-public class SearchResult<T> {
+public class SearchResult {
 
     //商品列表
-    private List<T> itemList;
+    private List<Map<String,Object>> itemList;
     //总记录数
     private long recordCount;
     //总页数
@@ -16,11 +14,12 @@ public class SearchResult<T> {
     //当前页
     private long curPage;
 
-    public List<T> getItemList() {
+
+    public List<Map<String, Object>> getItemList() {
         return itemList;
     }
 
-    public void setItemList(List<T> itemList) {
+    public void setItemList(List<Map<String, Object>> itemList) {
         this.itemList = itemList;
     }
 

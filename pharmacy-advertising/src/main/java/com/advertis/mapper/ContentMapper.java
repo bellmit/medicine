@@ -1,7 +1,7 @@
 package com.advertis.mapper;
 
-import com.advertis.pojo.Content;
-import com.advertis.pojo.ContentExample;
+import pojo.Content;
+import pojo.ContentExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -20,6 +20,8 @@ public interface ContentMapper {
     List<Content> selectByExampleWithBLOBs(ContentExample example);
 
     List<Content> selectByExample(ContentExample example);
+
+    List<Content> selectAll();
 
     Content selectByPrimaryKey(Long id);
 

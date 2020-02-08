@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.advertis.mapper.ContentMapper" >
-  <resultMap id="BaseResultMap" type="com.advertis.pojo.Content" >
+  <resultMap id="BaseResultMap" type="pojo.Content" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="title" property="title" jdbcType="VARCHAR" />
     <result column="sub_title" property="subTitle" jdbcType="VARCHAR" />
@@ -11,7 +11,7 @@
     <result column="created" property="created" jdbcType="TIMESTAMP" />
     <result column="updated" property="updated" jdbcType="TIMESTAMP" />
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.advertis.pojo.Content" extends="BaseResultMap" >
+  <resultMap id="ResultMapWithBLOBs" type="pojo.Content" extends="BaseResultMap" >
     <result column="content" property="content" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -78,7 +78,7 @@
   <sql id="Blob_Column_List" >
     content
   </sql>
-  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.advertis.pojo.ContentExample" >
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="pojo.ContentExample" >
     select
     <if test="distinct" >
       distinct
@@ -94,7 +94,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.advertis.pojo.ContentExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="pojo.ContentExample" >
     select
     <if test="distinct" >
       distinct
@@ -109,24 +109,27 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
-    select 
+    select
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
     from content
     where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, title, sub_title, title_desc, url, pic, created, updated,content from content
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from content
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.advertis.pojo.ContentExample" >
+  <delete id="deleteByExample" parameterType="pojo.ContentExample" >
     delete from content
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.advertis.pojo.Content" >
+  <insert id="insert" parameterType="pojo.Content" >
     insert into content (id, title, sub_title, 
       title_desc, url, pic, 
       created, updated, content
@@ -136,7 +139,7 @@
       #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, #{content,jdbcType=LONGVARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.advertis.pojo.Content" >
+  <insert id="insertSelective" parameterType="pojo.Content" >
     insert into content
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -197,7 +200,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.advertis.pojo.ContentExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="pojo.ContentExample" resultType="java.lang.Integer" >
     select count(*) from content
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -267,7 +270,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.advertis.pojo.Content" >
+  <update id="updateByPrimaryKeySelective" parameterType="pojo.Content" >
     update content
     <set >
       <if test="title != null" >
@@ -297,7 +300,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.advertis.pojo.Content" >
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="pojo.Content" >
     update content
     set title = #{title,jdbcType=VARCHAR},
       sub_title = #{subTitle,jdbcType=VARCHAR},
@@ -309,7 +312,7 @@
       content = #{content,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.advertis.pojo.Content" >
+  <update id="updateByPrimaryKey" parameterType="pojo.Content" >
     update content
     set title = #{title,jdbcType=VARCHAR},
       sub_title = #{subTitle,jdbcType=VARCHAR},

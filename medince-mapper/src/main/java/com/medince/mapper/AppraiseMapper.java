@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.taotao.pojo.Appraise;
 import com.taotao.pojo.AppraiseExample;
+import org.apache.ibatis.annotations.Select;
 
 public interface AppraiseMapper {
     int countByExample(AppraiseExample example);
@@ -30,4 +31,11 @@ public interface AppraiseMapper {
     int updateByPrimaryKeySelective(Appraise record);
 
     int updateByPrimaryKey(Appraise record);
+
+    @Select("select count(*) from appraise")
+    int count();
+
+    @Select("select count(*) from appraise where rank = ${id}")
+    int num(@Param("id")Integer id);
+
 }

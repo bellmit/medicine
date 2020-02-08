@@ -1,22 +1,20 @@
 package com.yuekangsong.service;
 
+import com.taotao.pojo.*;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
 import org.springframework.stereotype.Service;
-import vo.*;
 
 @Service
 public class MedicineServiceImpl implements MedicineService {
 
     /**
-     * 查询商品的基本信息
+     * 查询药品的基本信息
      * @param itemId
      * @return
      */
     @Override
-    public MedicineMessage query(String itemId) {
+    public MedicineMessage query(Integer itemId) {
 
         String json = HttpClientUtil.doGet("http://localhost:8080/aa/medin/query/" + itemId);
         MedicineMessage medicineMessage = JsonUtils.jsonToPojo(json, MedicineMessage.class);
@@ -29,9 +27,9 @@ public class MedicineServiceImpl implements MedicineService {
      * @return
      */
     @Override
-    public ItemDesc queryDesc(String itemId) {
-        ItemDesc itemDesc = new ItemDesc(); //等接口
-        return itemDesc;
+    public String queryDesc(String itemId) {
+        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryDesc/" + itemId);
+        return data;
     }
 
     /**
@@ -40,9 +38,9 @@ public class MedicineServiceImpl implements MedicineService {
      * @return
      */
     @Override
-    public ItemExplain queryExplain(String itemId) {
-        ItemExplain itemExplain = new ItemExplain(); //等接口
-        return itemExplain;
+    public String queryExplain(String itemId) {
+        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryExplain/" + itemId);
+        return data;
     }
 
     /**
@@ -51,9 +49,9 @@ public class MedicineServiceImpl implements MedicineService {
      * @return
      */
     @Override
-    public Sales querySales(String itemId) {
-        Sales sales = new Sales(); //等接口
-        return sales;
+    public String querySales(String itemId) {
+        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/querySales/" + itemId);
+        return data;
     }
 
     /**
@@ -62,10 +60,9 @@ public class MedicineServiceImpl implements MedicineService {
      * @return
      */
     @Override
-    public Appraise queryAppraise(String drugId) {
-        Appraise appraise = new Appraise(); //等接口
-        return appraise;
+    public String queryAppraise(String drugId,Integer rank) {
+        String data = HttpClientUtil.doGet("http://localhost:8080/aa/medin/queryAppraise/" + drugId+"/"+rank);
+        return data;
     }
-
 
 }

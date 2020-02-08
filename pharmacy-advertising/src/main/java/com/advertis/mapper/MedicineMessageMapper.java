@@ -1,7 +1,7 @@
 package com.advertis.mapper;
 
-import com.advertis.pojo.MedicineMessage;
-import com.advertis.pojo.MedicineMessageExample;
+import pojo.MedicineMessage;
+import pojo.MedicineMessageExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
