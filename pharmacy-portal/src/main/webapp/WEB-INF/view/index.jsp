@@ -14,10 +14,10 @@
             _behavior: url(https://www.yuekangsong.com/shop/templates/default/css/csshover.htc);
         }
     </style>
-    <link href="shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
-    <link href="shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
-    <link href="shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
-    <link href="shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!--[if IE 7]>
     <link rel="stylesheet" href="https://www.yuekangsong.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -44,12 +44,12 @@ catch(e){}
     <script>
         var COOKIE_PRE = 'yuekangsong_';var _CHARSET = 'utf-8';var SITEURL = 'https://www.yuekangsong.com';var SHOP_SITE_URL = 'https://www.yuekangsong.com';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var SHOP_TEMPLATES_URL = 'https://www.yuekangsong.com/shop/templates/default';
     </script>
-    <script src="data/resource/js/jquery.js"></script>
-    <script src="data/resource/js/common.js" charset="utf-8"></script>
-    <script src="data/resource/js/jquery-ui/jquery.ui.js"></script>
-    <script src="data/resource/js/jquery.validation.min.js"></script>
-    <script src="data/resource/js/jquery.masonry.js"></script>
-    <script src="data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+    <script src="../../data/resource/js/jquery.js"></script>
+    <script src="../../data/resource/js/common.js" charset="utf-8"></script>
+    <script src="../../data/resource/js/jquery-ui/jquery.ui.js"></script>
+    <script src="../../data/resource/js/jquery.validation.min.js"></script>
+    <script src="../../data/resource/js/jquery.masonry.js"></script>
+    <script src="../../data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
     <script type="text/javascript">
         var PRICE_FORMAT = '&yen;%s';
         $(function(){
@@ -132,14 +132,14 @@ catch(e){}
         <div class="pop-bg-m">
             <ul>
                 <li class="am-rightlist1"><a href="https://www.yuekangsong.com/index.php?c=login&op=index"> <img
-                    src="shop/templates/default/images/am-login.png">
+                    src="../../shop/templates/default/images/am-login.png">
 
                     <div class="show"></div>
                 </a></li>
                 <li class="am-rightlist2" id="rtoolbar_cart">
 
                     <div class="am-buy-area">
-                        <img src="shop/templates/default/images/buy_cart.png">
+                        <img src="../../shop/templates/default/images/buy_cart.png">
 
                         <p>购物车</p>
                         <div id="rtoobar_cart_count" class="right-addcart-goods-num">0</div>
@@ -147,11 +147,11 @@ catch(e){}
 
 
                 </li>
-                <li class="am-rightlist3"><a href="https://www.yuekangsong.com/index.php?c=member_favorites&op=fglist"><img src="shop/templates/default/images/start.png">
+                <li class="am-rightlist3"><a href="https://www.yuekangsong.com/index.php?c=member_favorites&op=fglist"><img src="../../shop/templates/default/images/start.png">
 
                     <div class="show">我的收藏</div>
                 </a></li>
-                <li class="am-rightlist4"><a href="https://www.yuekangsong.com/index.php?c=member_goodsbrowse&op=list"><img src="shop/templates/default/images/clock.png">
+                <li class="am-rightlist4"><a href="https://www.yuekangsong.com/index.php?c=member_goodsbrowse&op=list"><img src="../../shop/templates/default/images/clock.png">
 
                     <div class="show">历史记录</div>
                 </a></li>
@@ -168,11 +168,11 @@ catch(e){}
 
             <!-- 购物车结束 -->
             <ul class="am-ulsec">
-                <li class="am-erweima"><img src="shop/templates/default/images/shop/erweima.png">
+                <li class="am-erweima"><img src="../../shop/templates/default/images/shop/erweima.png">
                     <div class="show_erweima"><em></em><img
-                        src="shop/templates/default/images/shop/erweim.jpg"></div>
+                        src="../../shop/templates/default/images/shop/erweim.jpg"></div>
                 </li>
-                <li><img src="shop/templates/default/images/shop/am-top.png" id="goTopnew"></li>
+                <li><img src="../../shop/templates/default/images/shop/am-top.png" id="goTopnew"></li>
             </ul>
         </div>
 
@@ -230,7 +230,7 @@ catch(e){}
                     </li>
                     <li class="am-last">
                         <div class="am-wx">公众号</div>
-                        <div class="am-show-gzh" style="display: none;"><img src="shop/templates/default/images/shop/erweim.jpg"></div>
+                        <div class="am-show-gzh" style="display: none;"><img src="../../shop/templates/default/images/shop/erweim.jpg"></div>
                     </li>
                 </ul>
 
@@ -328,7 +328,7 @@ catch(e){}
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap am-header-wrap">
     <header class="public-head-layout wrapper">
-        <h1 class="site-logo"><a href="www_yuekangsong_default.html"><img src="data/upload/shop/common/06286872896538652.jpg" class="pngFix"></a></h1>
+        <h1 class="site-logo"><a href="www_yuekangsong_default.html"><img src="../../data/upload/shop/common/06286872896538652.jpg" class="pngFix"></a></h1>
 
         <div class="head-search-bar">
             <form action="www_yuekangsong_default.html" method="get" class="search-form" id="top_search_form">
@@ -347,7 +347,7 @@ catch(e){}
             </div>
         </div>
         <div class="head-user-menu">
-            <div class="am-ewm"><img src="shop/templates/default/images/shop/ykewm.jpg"></div>
+            <div class="am-ewm"><img src="../../shop/templates/default/images/shop/ykewm.jpg"></div>
             <dl class="my-mall" style="display: none;">
                 <dt><span class="ico"></span>我的商城<i class="arrow"></i></dt>
                 <dd>
@@ -380,7 +380,7 @@ catch(e){}
                         </div>
                         <ul>
                             <li class="no-goods"><img class="loading"
-                                                      src="shop/templates/default/images/loading.gif"/></li>
+                                                      src="../../shop/templates/default/images/loading.gif"/></li>
                         </ul>
                     </div>
                 </dd>
@@ -395,7 +395,7 @@ catch(e){}
                     </div>
                     <div class="incart-goods-box">
                         <div class="incart-goods"><img class="loading"
-                                                       src="shop/templates/default/images/loading.gif"/>
+                                                       src="../../shop/templates/default/images/loading.gif"/>
                         </div>
                     </div>
                     <div class="checkout"><span
@@ -419,7 +419,7 @@ catch(e){}
                 <ul class="menu">
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5483.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5483.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5483-0-0-0-0-0-0-0-0.html">家庭常备</a></h4>
                         </div>
                         <div class="sub-class">
@@ -522,7 +522,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5555.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5555.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5555-0-0-0-0-0-0-0-0.html">中西药品</a></h4>
                         </div>
                         <div class="sub-class">
@@ -689,7 +689,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5576.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5576.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5576-0-0-0-0-0-0-0-0.html">专科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -867,7 +867,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5473.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5473.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5473-0-0-0-0-0-0-0-0.html">妇科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -921,7 +921,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5517.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5517.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5517-0-0-0-0-0-0-0-0.html">男科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -945,7 +945,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5465.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5465.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5465-0-0-0-0-0-0-0-0.html">儿童用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -970,7 +970,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5620.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5620.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5620-0-0-0-0-0-0-0-0.html">滋补保健</a></h4>
                         </div>
                         <div class="sub-class">
@@ -1129,7 +1129,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5460.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5460.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5460-0-0-0-0-0-0-0-0.html">成人用品</a></h4>
                         </div>
                         <div class="sub-class">
@@ -1212,7 +1212,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5539.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5539.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5539-0-0-0-0-0-0-0-0.html">医疗器械</a></h4>
                         </div>
                         <div class="sub-class">
@@ -1321,11 +1321,11 @@ catch(e){}
 </nav>
 <div class="yksh-breadcrumb-layout">
 </div>
-<link href="shop/templates/default/css/index.css" rel="stylesheet" type="text/css">
-<link href="shop/templates/default/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="shop/resource/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="shop/resource/js/home_index.js" charset="utf-8"></script>
-<script type="text/javascript" src="shop/resource/js/swiper-3.3.1.min.js"
+<link href="../../shop/templates/default/css/index.css" rel="stylesheet" type="text/css">
+<link href="../../shop/templates/default/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../shop/resource/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../shop/resource/js/home_index.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../shop/resource/js/swiper-3.3.1.min.js"
         charset="utf-8"></script>
 <!--[if IE 6]>
 <script type="text/javascript" src="https://www.yuekangsong.com/data/resource/js/ie6.js" charset="utf-8"></script>
@@ -1376,7 +1376,20 @@ catch(e){}
 </style>
 <![endif]-->
 <div class="clear"></div>
+<%--大广告位的请求--%>
+<script type="text/javascript">
+    $.ajax({
+        type:"GET",//请求方式为get或者post
+        url:"/imgContent",//请求的url(一般为后台接口)
+//        data:{user:"xiao"},//发送到服务器的参数
+        dataType:"json",//服务器响应的数据类型
+        success:function(data){ //请求成功后返回的数据，赋值给变量'data'
+            //对data进行操作
+            alert(data);
+            }
 
+        });
+</script>
 <!-- HomeFocusLayout Begin-->
 <div class="home-focus-layout">
 
@@ -1389,7 +1402,7 @@ catch(e){}
         <ul>
             <li>
                 <a href="http://www.yuekangsong.com/item-101176.html" target="_blank" title="珍珠粉">
-                    <img src="data/upload/shop/editor/web-101-102-2-1.jpg" alt="珍珠粉"></a>
+                    <img src="../../data/upload/shop/editor/web-101-102-2-1.jpg" alt="珍珠粉"></a>
                 <a href="www_yuekangsong_default.html" target="_blank" title="">
                     <img src="https://www.yuekangsong.com/data/upload/" alt=""></a>
                 <a href="www_yuekangsong_default.html" target="_blank" title="">
@@ -1408,7 +1421,7 @@ catch(e){}
     <div class="am-login-area">
         <div class="am-containernew">
             <div class="am-loginright">
-                <img src="shop/templates/default/images/shop/logo_index.jpg">
+                <img src="../../shop/templates/default/images/shop/logo_index.jpg">
             </div>
             <h2>Hi~你好！</h2>
 
@@ -1421,18 +1434,18 @@ catch(e){}
 
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b1.jpg">
+                        src="../../shop/templates/default/images/shop/b1.jpg">
 
                         <p>售前咨询</p></a></li>
 
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b2.jpg">
+                        src="../../shop/templates/default/images/shop/b2.jpg">
 
                         <p>售后咨询</p></a></li>
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b3.jpg">
+                        src="../../shop/templates/default/images/shop/b3.jpg">
 
                         <p>在线药师</p></a></li>
                 </ul>
@@ -1440,16 +1453,16 @@ catch(e){}
             </div>
             <div class="am-yh">
                 <dl>
-                    <dd><img src="shop/templates/default/images/shop/c1.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c1.jpg">
 
                         <p>正品保证</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c2.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c2.jpg">
 
                         <p>满69包邮</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c3.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c3.jpg">
 
                         <p>药监认证</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c4.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c4.jpg">
 
                         <p>货到付款</p></dd>
                 </dl>
@@ -1470,7 +1483,7 @@ catch(e){}
         </ul>
         <div class="tabs-panel sale-goods-list ">
             <ol  class="am-tabs-lists">
-                <li><a href="https://www.yuekangsong.com/item-100743.html"> <img src="data/upload/shop/store/goods/1/1_05148934448984365_240.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/item-100743.html"> <img src="../../data/upload/shop/store/goods/1/1_05148934448984365_240.jpg"></a></li>
             </ol>
         </div>
 
@@ -1484,13 +1497,13 @@ catch(e){}
 <div class="am-floor-area">
     <div class="am-floor-jtcb">
         <ul>
-            <li><img src="shop/templates/default/images/shop/jiatingcb.png"><em>家庭常备</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray02.png"><em>专科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray04.png"><em>妇科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray03.png"><em>男科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray05.png"><em>滋补保健</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray06.png"><em>成人用品</em></li>
-            <li class="am-last-child"><img src="shop/templates/default/images/shop/sprites_gray06.png"><em>医疗器械</em></li>
+            <li><img src="../../shop/templates/default/images/shop/jiatingcb.png"><em>家庭常备</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray02.png"><em>专科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray04.png"><em>妇科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray03.png"><em>男科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray05.png"><em>滋补保健</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray06.png"><em>成人用品</em></li>
+            <li class="am-last-child"><img src="../../shop/templates/default/images/shop/sprites_gray06.png"><em>医疗器械</em></li>
         </ul>
     </div>
     <!--StandardLayout Begin-->
@@ -1533,8 +1546,8 @@ catch(e){}
             </div>
             <div class="am-r-add">
                 <ul>
-                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=32"><img src="data/upload/shop/editor/06269819598540970.jpg"></a></li>
-                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=33"><img src="data/upload/shop/editor/06269819661072667.jpg"></a></li>
+                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=32"><img src="../../data/upload/shop/editor/06269819598540970.jpg"></a></li>
+                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=33"><img src="../../data/upload/shop/editor/06269819661072667.jpg"></a></li>
                 </ul>
             </div>
         </div>
@@ -1544,7 +1557,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100718.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05148259112194589_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05148259112194589_240.jpg"
                         alt="小儿感冒颗粒"/>
                 </a>
 
@@ -1560,7 +1573,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100684.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05148018816820416_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05148018816820416_240.jpg"
                         alt="桑菊感冒片"/>
                 </a>
 
@@ -1576,7 +1589,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100795.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149195900720616_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05149195900720616_240.jpg"
                         alt="京制牛黄解毒片"/>
                 </a>
 
@@ -1592,7 +1605,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100831.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149941317463962_240.png"
+                        src="../../data/upload/shop/store/goods/1/1_05149941317463962_240.png"
                         alt="银翘解毒片"/>
                 </a>
 
@@ -1608,7 +1621,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100794.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149191816067126_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05149191816067126_240.jpg"
                         alt="感冒灵胶囊"/>
                 </a>
 
@@ -1665,8 +1678,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=35"><img src="data/upload/shop/editor/06269820321380157.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=34"><img src="data/upload/shop/editor/05531068392724022.png"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=35"><img src="../../data/upload/shop/editor/06269820321380157.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=34"><img src="../../data/upload/shop/editor/05531068392724022.png"></a></li>
             </ul>
         </div>
     </div>
@@ -1676,7 +1689,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101144.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05204492033855726_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05204492033855726_240.jpg"
                     alt="辣椒风湿膏"/>
             </a>
 
@@ -1692,7 +1705,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101277.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05227754661692108_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05227754661692108_240.jpg"
                     alt="吲哚美辛贴片"/>
             </a>
 
@@ -1708,7 +1721,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101262.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05224354674217669_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05224354674217669_240.jpg"
                     alt="颈复康颗粒"/>
             </a>
 
@@ -1724,7 +1737,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100876.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05151518443262986_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05151518443262986_240.jpg"
                     alt="复方南星止痛膏"/>
             </a>
 
@@ -1740,7 +1753,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101588.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05550027583466252_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05550027583466252_240.jpg"
                     alt="康恩贝肠炎宁片"/>
             </a>
 
@@ -1797,8 +1810,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=38"><img src="data/upload/shop/editor/06269820483096036.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=39"><img src="data/upload/shop/editor/06269820532940591.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=38"><img src="../../data/upload/shop/editor/06269820483096036.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=39"><img src="../../data/upload/shop/editor/06269820532940591.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -1808,7 +1821,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100623.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05145615259111064_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05145615259111064_240.jpg"
                     alt="左炔诺孕酮片（金毓婷）"/>
             </a>
 
@@ -1824,7 +1837,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100814.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149827611276279_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149827611276279_240.jpg"
                     alt="益母草颗粒"/>
             </a>
 
@@ -1840,7 +1853,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100807.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149784639259492_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149784639259492_240.jpg"
                     alt="气血和胶囊"/>
             </a>
 
@@ -1897,8 +1910,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=36"><img src="data/upload/shop/editor/06269820664444849.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=37"><img src="data/upload/shop/editor/06269820716749218.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=36"><img src="../../data/upload/shop/editor/06269820664444849.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=37"><img src="../../data/upload/shop/editor/06269820716749218.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -1908,7 +1921,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101343.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05239828729330160_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05239828729330160_240.jpg"
                     alt="阳春口服液"/>
             </a>
 
@@ -1924,7 +1937,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101118.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05204193846043903_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05204193846043903_240.jpg"
                     alt="锁阳固精丸"/>
             </a>
 
@@ -1940,7 +1953,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100847.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05150012485736802_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05150012485736802_240.jpg"
                     alt="麦味地黄丸（大蜜丸）"/>
             </a>
 
@@ -1956,7 +1969,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100706.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05148195749806013_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05148195749806013_240.jpg"
                     alt="五子衍宗丸"/>
             </a>
 
@@ -1972,7 +1985,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100817.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149842916559633_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149842916559633_240.jpg"
                     alt="补肾固齿丸"/>
             </a>
 
@@ -2029,7 +2042,7 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=43"><img src="data/upload/shop/editor/06269820859542359.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=43"><img src="../../data/upload/shop/editor/06269820859542359.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -2039,7 +2052,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100894.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05151707101793487_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05151707101793487_240.jpg"
                     alt="汤臣倍健维生素C片"/>
             </a>
 
@@ -2055,7 +2068,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101074.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05198524319485032_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05198524319485032_240.jpg"
                     alt="脑白金年轻态健康品"/>
             </a>
 
@@ -2071,7 +2084,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101073.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05198521199063426_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05198521199063426_240.jpg"
                     alt="太太静心助眠口服液"/>
             </a>
 
@@ -2087,7 +2100,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101507.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05496285661112291_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05496285661112291_240.jpg"
                     alt="同仁堂红糖姜茶"/>
             </a>
 
@@ -2254,7 +2267,7 @@ catch(e){}
 
         <div class="am-copyright">
             <p>
-                <a  target="_blank" href="data/upload/shop/article/05799717836792755.jpg">药品经营许可证</a>
+                <a  target="_blank" href="../../data/upload/shop/article/05799717836792755.jpg">药品经营许可证</a>
                 <a  href="http://www.yuekangsong.com/shop/index.php?c=article&amp;op=show&amp;article_id=48">营业执照</a>
                 <a  target="_blank" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">京ICP备15001998号</a>
                 <a  target="_blank" href="http://www.yuekangsong.com/shop/index.php?c=article&amp;op=show&amp;article_id=46">GSP认证证书</a>
@@ -2262,7 +2275,7 @@ catch(e){}
         </div>
         <div class="am-zz">
             <p>
-                <a  target="_blank" href="data/upload/shop/article/05799719527653417.jpg">食品经营许可证</a>
+                <a  target="_blank" href="../../data/upload/shop/article/05799719527653417.jpg">食品经营许可证</a>
                 <a  target="_blank" href="https://www.yuekangsong.com/article-43.html">互联网药品信息服务资格证书:（京）-非经营性-2015-0001</a>
                 <a  target="_blank" href="https://www.yuekangsong.com/article-42.html">互联网药品交易资格证书：京C20150004</a>
             </p>
@@ -2270,7 +2283,7 @@ catch(e){}
         <div class="am-bottom-copy">版权所有：北京源通百姓平安大药房有限公司</div>
         <div class="am-copy-img">
             <div style="width:300px;margin:0 auto; padding:20px 0;">
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010086" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="shop/templates/default/images/police_logo.png" style="float:left;margin-right: 0px;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393; font-size:14px;">京公网安备 11030102010086号</p></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010086" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../../shop/templates/default/images/police_logo.png" style="float:left;margin-right: 0px;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393; font-size:14px;">京公网安备 11030102010086号</p></a>
             </div>
         </div>
     </div>
@@ -2303,10 +2316,10 @@ catch(e){}
             _behavior: url(https://www.yuekangsong.com/shop/templates/default/css/csshover.htc);
         }
     </style>
-    <link href="shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
-    <link href="shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
-    <link href="shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
-    <link href="shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../shop/templates/default/css/base.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/templates/default/css/home_header.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/templates/default/css/home_login.css" rel="stylesheet" type="text/css">
+    <link href="../../shop/resource/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!--[if IE 7]>
     <link rel="stylesheet" href="https://www.yuekangsong.com/shop/resource/font/font-awesome/css/font-awesome-ie7.min.css">
     <![endif]-->
@@ -2333,12 +2346,12 @@ catch(e){}
     <script>
         var COOKIE_PRE = 'yuekangsong_';var _CHARSET = 'utf-8';var SITEURL = 'https://www.yuekangsong.com';var SHOP_SITE_URL = 'https://www.yuekangsong.com';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var RESOURCE_SITE_URL = 'https://www.yuekangsong.com/data/resource';var SHOP_TEMPLATES_URL = 'https://www.yuekangsong.com/shop/templates/default';
     </script>
-    <script src="data/resource/js/jquery.js"></script>
-    <script src="data/resource/js/common.js" charset="utf-8"></script>
-    <script src="data/resource/js/jquery-ui/jquery.ui.js"></script>
-    <script src="data/resource/js/jquery.validation.min.js"></script>
-    <script src="data/resource/js/jquery.masonry.js"></script>
-    <script src="data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
+    <script src="../../data/resource/js/jquery.js"></script>
+    <script src="../../data/resource/js/common.js" charset="utf-8"></script>
+    <script src="../../data/resource/js/jquery-ui/jquery.ui.js"></script>
+    <script src="../../data/resource/js/jquery.validation.min.js"></script>
+    <script src="../../data/resource/js/jquery.masonry.js"></script>
+    <script src="../../data/resource/js/dialog/dialog.js" id="dialog_js" charset="utf-8"></script>
     <script type="text/javascript">
         var PRICE_FORMAT = '&yen;%s';
         $(function(){
@@ -2421,14 +2434,14 @@ catch(e){}
         <div class="pop-bg-m">
             <ul>
                 <li class="am-rightlist1"><a href="https://www.yuekangsong.com/index.php?c=login&op=index"> <img
-                    src="shop/templates/default/images/am-login.png">
+                    src="../../shop/templates/default/images/am-login.png">
 
                     <div class="show"></div>
                 </a></li>
                 <li class="am-rightlist2" id="rtoolbar_cart">
 
                     <div class="am-buy-area">
-                        <img src="shop/templates/default/images/buy_cart.png">
+                        <img src="../../shop/templates/default/images/buy_cart.png">
 
                         <p>购物车</p>
                         <div id="rtoobar_cart_count" class="right-addcart-goods-num">0</div>
@@ -2436,11 +2449,11 @@ catch(e){}
 
 
                 </li>
-                <li class="am-rightlist3"><a href="https://www.yuekangsong.com/index.php?c=member_favorites&op=fglist"><img src="shop/templates/default/images/start.png">
+                <li class="am-rightlist3"><a href="https://www.yuekangsong.com/index.php?c=member_favorites&op=fglist"><img src="../../shop/templates/default/images/start.png">
 
                     <div class="show">我的收藏</div>
                 </a></li>
-                <li class="am-rightlist4"><a href="https://www.yuekangsong.com/index.php?c=member_goodsbrowse&op=list"><img src="shop/templates/default/images/clock.png">
+                <li class="am-rightlist4"><a href="https://www.yuekangsong.com/index.php?c=member_goodsbrowse&op=list"><img src="../../shop/templates/default/images/clock.png">
 
                     <div class="show">历史记录</div>
                 </a></li>
@@ -2457,11 +2470,11 @@ catch(e){}
 
             <!-- 购物车结束 -->
             <ul class="am-ulsec">
-                <li class="am-erweima"><img src="shop/templates/default/images/shop/erweima.png">
+                <li class="am-erweima"><img src="../../shop/templates/default/images/shop/erweima.png">
                     <div class="show_erweima"><em></em><img
-                        src="shop/templates/default/images/shop/erweim.jpg"></div>
+                        src="../../shop/templates/default/images/shop/erweim.jpg"></div>
                 </li>
-                <li><img src="shop/templates/default/images/shop/am-top.png" id="goTopnew"></li>
+                <li><img src="../../shop/templates/default/images/shop/am-top.png" id="goTopnew"></li>
             </ul>
         </div>
 
@@ -2519,7 +2532,7 @@ catch(e){}
                     </li>
                     <li class="am-last">
                         <div class="am-wx">公众号</div>
-                        <div class="am-show-gzh" style="display: none;"><img src="shop/templates/default/images/shop/erweim.jpg"></div>
+                        <div class="am-show-gzh" style="display: none;"><img src="../../shop/templates/default/images/shop/erweim.jpg"></div>
                     </li>
                 </ul>
 
@@ -2617,7 +2630,7 @@ catch(e){}
 <!-- PublicHeadLayout Begin -->
 <div class="header-wrap am-header-wrap">
     <header class="public-head-layout wrapper">
-        <h1 class="site-logo"><a href="www_yuekangsong_default.html"><img src="data/upload/shop/common/06286872896538652.jpg" class="pngFix"></a></h1>
+        <h1 class="site-logo"><a href="www_yuekangsong_default.html"><img src="../../data/upload/shop/common/06286872896538652.jpg" class="pngFix"></a></h1>
 
         <div class="head-search-bar">
             <form action="www_yuekangsong_default.html" method="get" class="search-form" id="top_search_form">
@@ -2636,7 +2649,7 @@ catch(e){}
             </div>
         </div>
         <div class="head-user-menu">
-            <div class="am-ewm"><img src="shop/templates/default/images/shop/ykewm.jpg"></div>
+            <div class="am-ewm"><img src="../../shop/templates/default/images/shop/ykewm.jpg"></div>
             <dl class="my-mall" style="display: none;">
                 <dt><span class="ico"></span>我的商城<i class="arrow"></i></dt>
                 <dd>
@@ -2669,7 +2682,7 @@ catch(e){}
                         </div>
                         <ul>
                             <li class="no-goods"><img class="loading"
-                                                      src="shop/templates/default/images/loading.gif"/></li>
+                                                      src="../../shop/templates/default/images/loading.gif"/></li>
                         </ul>
                     </div>
                 </dd>
@@ -2684,7 +2697,7 @@ catch(e){}
                     </div>
                     <div class="incart-goods-box">
                         <div class="incart-goods"><img class="loading"
-                                                       src="shop/templates/default/images/loading.gif"/>
+                                                       src="../../shop/templates/default/images/loading.gif"/>
                         </div>
                     </div>
                     <div class="checkout"><span
@@ -2708,7 +2721,7 @@ catch(e){}
                 <ul class="menu">
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5483.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5483.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5483-0-0-0-0-0-0-0-0.html">家庭常备</a></h4>
                         </div>
                         <div class="sub-class">
@@ -2811,7 +2824,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5555.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5555.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5555-0-0-0-0-0-0-0-0.html">中西药品</a></h4>
                         </div>
                         <div class="sub-class">
@@ -2978,7 +2991,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5576.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5576.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5576-0-0-0-0-0-0-0-0.html">专科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3156,7 +3169,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5473.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5473.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5473-0-0-0-0-0-0-0-0.html">妇科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3210,7 +3223,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5517.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5517.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5517-0-0-0-0-0-0-0-0.html">男科用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3234,7 +3247,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5465.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5465.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5465-0-0-0-0-0-0-0-0.html">儿童用药</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3259,7 +3272,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5620.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5620.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5620-0-0-0-0-0-0-0-0.html">滋补保健</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3418,7 +3431,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5460.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5460.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5460-0-0-0-0-0-0-0-0.html">成人用品</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3501,7 +3514,7 @@ catch(e){}
                     </li>
                     <li>
                         <div class="class sprite01">
-                            <span class="am-goods-ionic"><img src="data/upload/shop/common/category-pic-5539.jpg"></span>
+                            <span class="am-goods-ionic"><img src="../../data/upload/shop/common/category-pic-5539.jpg"></span>
                             <h4><a href="https://www.yuekangsong.com/cate-5539-0-0-0-0-0-0-0-0.html">医疗器械</a></h4>
                         </div>
                         <div class="sub-class">
@@ -3610,11 +3623,11 @@ catch(e){}
 </nav>
 <div class="yksh-breadcrumb-layout">
 </div>
-<link href="shop/templates/default/css/index.css" rel="stylesheet" type="text/css">
-<link href="shop/templates/default/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="shop/resource/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="shop/resource/js/home_index.js" charset="utf-8"></script>
-<script type="text/javascript" src="shop/resource/js/swiper-3.3.1.min.js"
+<link href="../../shop/templates/default/css/index.css" rel="stylesheet" type="text/css">
+<link href="../../shop/templates/default/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../shop/resource/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../shop/resource/js/home_index.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../shop/resource/js/swiper-3.3.1.min.js"
         charset="utf-8"></script>
 <!--[if IE 6]>
 <script type="text/javascript" src="https://www.yuekangsong.com/data/resource/js/ie6.js" charset="utf-8"></script>
@@ -3678,7 +3691,7 @@ catch(e){}
         <ul>
             <li>
                 <a href="http://www.yuekangsong.com/item-101176.html" target="_blank" title="珍珠粉">
-                    <img src="data/upload/shop/editor/web-101-102-2-1.jpg" alt="珍珠粉"></a>
+                    <img src="../../data/upload/shop/editor/web-101-102-2-1.jpg" alt="珍珠粉"></a>
                 <a href="www_yuekangsong_default.html" target="_blank" title="">
                     <img src="https://www.yuekangsong.com/data/upload/" alt=""></a>
                 <a href="www_yuekangsong_default.html" target="_blank" title="">
@@ -3697,7 +3710,7 @@ catch(e){}
     <div class="am-login-area">
         <div class="am-containernew">
             <div class="am-loginright">
-                <img src="shop/templates/default/images/shop/logo_index.jpg">
+                <img src="../../shop/templates/default/images/shop/logo_index.jpg">
             </div>
             <h2>Hi~你好！</h2>
 
@@ -3710,18 +3723,18 @@ catch(e){}
 
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b1.jpg">
+                        src="../../shop/templates/default/images/shop/b1.jpg">
 
                         <p>售前咨询</p></a></li>
 
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b2.jpg">
+                        src="../../shop/templates/default/images/shop/b2.jpg">
 
                         <p>售后咨询</p></a></li>
                     <li><a target="_blank"
                            href="http://wpa.qq.com/msgrd?v=3&uin=3470749439&site=qq&menu=yes"><img
-                        src="shop/templates/default/images/shop/b3.jpg">
+                        src="../../shop/templates/default/images/shop/b3.jpg">
 
                         <p>在线药师</p></a></li>
                 </ul>
@@ -3729,16 +3742,16 @@ catch(e){}
             </div>
             <div class="am-yh">
                 <dl>
-                    <dd><img src="shop/templates/default/images/shop/c1.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c1.jpg">
 
                         <p>正品保证</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c2.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c2.jpg">
 
                         <p>满69包邮</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c3.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c3.jpg">
 
                         <p>药监认证</p></dd>
-                    <dd><img src="shop/templates/default/images/shop/c4.jpg">
+                    <dd><img src="../../shop/templates/default/images/shop/c4.jpg">
 
                         <p>货到付款</p></dd>
                 </dl>
@@ -3759,7 +3772,7 @@ catch(e){}
         </ul>
         <div class="tabs-panel sale-goods-list ">
             <ol  class="am-tabs-lists">
-                <li><a href="https://www.yuekangsong.com/item-100743.html"> <img src="data/upload/shop/store/goods/1/1_05148934448984365_240.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/item-100743.html"> <img src="../../data/upload/shop/store/goods/1/1_05148934448984365_240.jpg"></a></li>
             </ol>
         </div>
 
@@ -3773,13 +3786,13 @@ catch(e){}
 <div class="am-floor-area">
     <div class="am-floor-jtcb">
         <ul>
-            <li><img src="shop/templates/default/images/shop/jiatingcb.png"><em>家庭常备</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray02.png"><em>专科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray04.png"><em>妇科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray03.png"><em>男科用药</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray05.png"><em>滋补保健</em></li>
-            <li><img src="shop/templates/default/images/shop/sprites_gray06.png"><em>成人用品</em></li>
-            <li class="am-last-child"><img src="shop/templates/default/images/shop/sprites_gray06.png"><em>医疗器械</em></li>
+            <li><img src="../../shop/templates/default/images/shop/jiatingcb.png"><em>家庭常备</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray02.png"><em>专科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray04.png"><em>妇科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray03.png"><em>男科用药</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray05.png"><em>滋补保健</em></li>
+            <li><img src="../../shop/templates/default/images/shop/sprites_gray06.png"><em>成人用品</em></li>
+            <li class="am-last-child"><img src="../../shop/templates/default/images/shop/sprites_gray06.png"><em>医疗器械</em></li>
         </ul>
     </div>
     <!--StandardLayout Begin-->
@@ -3822,8 +3835,8 @@ catch(e){}
             </div>
             <div class="am-r-add">
                 <ul>
-                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=32"><img src="data/upload/shop/editor/06269819598540970.jpg"></a></li>
-                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=33"><img src="data/upload/shop/editor/06269819661072667.jpg"></a></li>
+                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=32"><img src="../../data/upload/shop/editor/06269819598540970.jpg"></a></li>
+                    <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=33"><img src="../../data/upload/shop/editor/06269819661072667.jpg"></a></li>
                 </ul>
             </div>
         </div>
@@ -3833,7 +3846,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100718.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05148259112194589_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05148259112194589_240.jpg"
                         alt="小儿感冒颗粒"/>
                 </a>
 
@@ -3849,7 +3862,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100684.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05148018816820416_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05148018816820416_240.jpg"
                         alt="桑菊感冒片"/>
                 </a>
 
@@ -3865,7 +3878,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100795.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149195900720616_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05149195900720616_240.jpg"
                         alt="京制牛黄解毒片"/>
                 </a>
 
@@ -3881,7 +3894,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100831.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149941317463962_240.png"
+                        src="../../data/upload/shop/store/goods/1/1_05149941317463962_240.png"
                         alt="银翘解毒片"/>
                 </a>
 
@@ -3897,7 +3910,7 @@ catch(e){}
                 <li><a target="_blank"
                        href="https://www.yuekangsong.com/item-100794.html">
                     <img
-                        src="data/upload/shop/store/goods/1/1_05149191816067126_240.jpg"
+                        src="../../data/upload/shop/store/goods/1/1_05149191816067126_240.jpg"
                         alt="感冒灵胶囊"/>
                 </a>
 
@@ -3954,8 +3967,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=35"><img src="data/upload/shop/editor/06269820321380157.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=34"><img src="data/upload/shop/editor/05531068392724022.png"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=35"><img src="../../data/upload/shop/editor/06269820321380157.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=34"><img src="../../data/upload/shop/editor/05531068392724022.png"></a></li>
             </ul>
         </div>
     </div>
@@ -3965,7 +3978,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101144.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05204492033855726_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05204492033855726_240.jpg"
                     alt="辣椒风湿膏"/>
             </a>
 
@@ -3981,7 +3994,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101277.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05227754661692108_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05227754661692108_240.jpg"
                     alt="吲哚美辛贴片"/>
             </a>
 
@@ -3997,7 +4010,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101262.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05224354674217669_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05224354674217669_240.jpg"
                     alt="颈复康颗粒"/>
             </a>
 
@@ -4013,7 +4026,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100876.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05151518443262986_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05151518443262986_240.jpg"
                     alt="复方南星止痛膏"/>
             </a>
 
@@ -4029,7 +4042,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101588.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05550027583466252_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05550027583466252_240.jpg"
                     alt="康恩贝肠炎宁片"/>
             </a>
 
@@ -4086,8 +4099,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=38"><img src="data/upload/shop/editor/06269820483096036.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=39"><img src="data/upload/shop/editor/06269820532940591.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=38"><img src="../../data/upload/shop/editor/06269820483096036.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=39"><img src="../../data/upload/shop/editor/06269820532940591.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -4097,7 +4110,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100623.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05145615259111064_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05145615259111064_240.jpg"
                     alt="左炔诺孕酮片（金毓婷）"/>
             </a>
 
@@ -4113,7 +4126,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100814.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149827611276279_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149827611276279_240.jpg"
                     alt="益母草颗粒"/>
             </a>
 
@@ -4129,7 +4142,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100807.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149784639259492_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149784639259492_240.jpg"
                     alt="气血和胶囊"/>
             </a>
 
@@ -4186,8 +4199,8 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=36"><img src="data/upload/shop/editor/06269820664444849.jpg"></a></li>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=37"><img src="data/upload/shop/editor/06269820716749218.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=36"><img src="../../data/upload/shop/editor/06269820664444849.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=37"><img src="../../data/upload/shop/editor/06269820716749218.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -4197,7 +4210,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101343.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05239828729330160_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05239828729330160_240.jpg"
                     alt="阳春口服液"/>
             </a>
 
@@ -4213,7 +4226,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101118.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05204193846043903_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05204193846043903_240.jpg"
                     alt="锁阳固精丸"/>
             </a>
 
@@ -4229,7 +4242,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100847.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05150012485736802_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05150012485736802_240.jpg"
                     alt="麦味地黄丸（大蜜丸）"/>
             </a>
 
@@ -4245,7 +4258,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100706.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05148195749806013_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05148195749806013_240.jpg"
                     alt="五子衍宗丸"/>
             </a>
 
@@ -4261,7 +4274,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100817.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05149842916559633_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05149842916559633_240.jpg"
                     alt="补肾固齿丸"/>
             </a>
 
@@ -4318,7 +4331,7 @@ catch(e){}
         </div>
         <div class="am-r-add">
             <ul>
-                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=43"><img src="data/upload/shop/editor/06269820859542359.jpg"></a></li>
+                <li><a href="https://www.yuekangsong.com/index.php?c=special&op=special_detail&special_id=43"><img src="../../data/upload/shop/editor/06269820859542359.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -4328,7 +4341,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-100894.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05151707101793487_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05151707101793487_240.jpg"
                     alt="汤臣倍健维生素C片"/>
             </a>
 
@@ -4344,7 +4357,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101074.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05198524319485032_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05198524319485032_240.jpg"
                     alt="脑白金年轻态健康品"/>
             </a>
 
@@ -4360,7 +4373,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101073.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05198521199063426_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05198521199063426_240.jpg"
                     alt="太太静心助眠口服液"/>
             </a>
 
@@ -4376,7 +4389,7 @@ catch(e){}
             <li><a target="_blank"
                    href="https://www.yuekangsong.com/item-101507.html">
                 <img
-                    src="data/upload/shop/store/goods/1/1_05496285661112291_240.jpg"
+                    src="../../data/upload/shop/store/goods/1/1_05496285661112291_240.jpg"
                     alt="同仁堂红糖姜茶"/>
             </a>
 
@@ -4543,7 +4556,7 @@ catch(e){}
 
         <div class="am-copyright">
             <p>
-                <a  target="_blank" href="data/upload/shop/article/05799717836792755.jpg">药品经营许可证</a>
+                <a  target="_blank" href="../../data/upload/shop/article/05799717836792755.jpg">药品经营许可证</a>
                 <a  href="http://www.yuekangsong.com/shop/index.php?c=article&amp;op=show&amp;article_id=48">营业执照</a>
                 <a  target="_blank" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">京ICP备15001998号</a>
                 <a  target="_blank" href="http://www.yuekangsong.com/shop/index.php?c=article&amp;op=show&amp;article_id=46">GSP认证证书</a>
@@ -4551,7 +4564,7 @@ catch(e){}
         </div>
         <div class="am-zz">
             <p>
-                <a  target="_blank" href="data/upload/shop/article/05799719527653417.jpg">食品经营许可证</a>
+                <a  target="_blank" href="../../data/upload/shop/article/05799719527653417.jpg">食品经营许可证</a>
                 <a  target="_blank" href="https://www.yuekangsong.com/article-43.html">互联网药品信息服务资格证书:（京）-非经营性-2015-0001</a>
                 <a  target="_blank" href="https://www.yuekangsong.com/article-42.html">互联网药品交易资格证书：京C20150004</a>
             </p>
@@ -4559,7 +4572,7 @@ catch(e){}
         <div class="am-bottom-copy">版权所有：北京源通百姓平安大药房有限公司</div>
         <div class="am-copy-img">
             <div style="width:300px;margin:0 auto; padding:20px 0;">
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010086" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="shop/templates/default/images/police_logo.png" style="float:left;margin-right: 0px;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393; font-size:14px;">京公网安备 11030102010086号</p></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010086" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../../shop/templates/default/images/police_logo.png" style="float:left;margin-right: 0px;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393; font-size:14px;">京公网安备 11030102010086号</p></a>
             </div>
         </div>
     </div>
@@ -4580,13 +4593,13 @@ catch(e){}
     </script> </div>
 <!-- 新的底部结束 -->
 
-<script type="text/javascript" src="data/resource/js/jquery.cookie.js"></script>
-<link href="data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="data/resource/js/perfect-scrollbar.min.js"></script>
-<script type="text/javascript" src="data/resource/js/qtip/jquery.qtip.min.js"></script>
-<link href="data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../data/resource/js/jquery.cookie.js"></script>
+<link href="../../data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../data/resource/js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="../../data/resource/js/qtip/jquery.qtip.min.js"></script>
+<link href="../../data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
 <!-- 对比 -->
-<script src="shop/resource/js/compare.js"></script>
+<script src="../../shop/resource/js/compare.js"></script>
 <script type="text/javascript">
     $(function () {
         // Membership card
@@ -4597,13 +4610,13 @@ catch(e){}
 div>
 <!-- 新的底部结束 -->
 
-<script type="text/javascript" src="data/resource/js/jquery.cookie.js"></script>
-<link href="data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="data/resource/js/perfect-scrollbar.min.js"></script>
-<script type="text/javascript" src="data/resource/js/qtip/jquery.qtip.min.js"></script>
-<link href="data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../data/resource/js/jquery.cookie.js"></script>
+<link href="../../data/resource/js/perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../data/resource/js/perfect-scrollbar.min.js"></script>
+<script type="text/javascript" src="../../data/resource/js/qtip/jquery.qtip.min.js"></script>
+<link href="../../data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
 <!-- 对比 -->
-<script src="shop/resource/js/compare.js"></script>
+<script src="../../shop/resource/js/compare.js"></script>
 <script type="text/javascript">
     $(function () {
         // Membership card
