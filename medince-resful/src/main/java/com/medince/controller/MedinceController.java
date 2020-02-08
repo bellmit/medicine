@@ -1,12 +1,16 @@
 package com.medince.controller;
 
-import com.taotao.pojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.medince.service.inteface.MedinceService;
+import com.taotao.pojo.Appraise;
+import com.taotao.pojo.ItemDesc;
+import com.taotao.pojo.ItemExplain;
+import com.taotao.pojo.MedicineMessage;
+import com.taotao.pojo.Sales;
 
 import java.util.List;
 

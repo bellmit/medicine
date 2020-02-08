@@ -1,11 +1,19 @@
 package com.medince.service;
 
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.medince.mapper.UserMapper;
 import com.medince.service.inteface.UserService;
+import com.medince.utils.MedicineResult;
 import com.taotao.pojo.User;
+import com.taotao.pojo.UserExample;
+import com.taotao.pojo.UserExample.Criteria;
 
 @Service
 public class UserServiceImpl implements UserService{
@@ -21,10 +29,63 @@ public class UserServiceImpl implements UserService{
 		record.setUserId(2L);
 		record.setUserName(username);
 		record.setPassword(pasword);
-		
+
 		userMapper.insert(record);
-		
 		return username;
 	}
+
+	//验证是否可以注册
+	@Override
+	public MedicineResult checkData(Integer type) {
+		// TODO Auto-generated method stub
+		UserExample example = new UserExample();
+		Criteria cr = example.createCriteria();
+		cr.andUserNameEqualTo(type.toString());
+		List<User> list = userMapper.selectByExample(example);
+		
+		if (list.size()>0) {
+			return MedicineResult.build(500, "手机号已被注册");
+		}
+		
+		return MedicineResult.ok();
+	}
+
+	@Override
+	public MedicineResult createUser(User user) {
+		// TODO Auto-generated method stub
+		
+		int i = userMapper.insertSelective(user);
+		
+		if(i==0)
+			return MedicineResult.build(500, "用户注册失败");
+		return MedicineResult.ok();
+	}
+
+	@Override
+	public MedicineResult userLogin(String username, String password, HttpServletRequest request,
+			HttpServletResponse response) {
+		
+		UserExample example = new UserExample();
+		Criteria cr = example.createCriteria();
+		
+		cr.andUserNameEqualTo(username);
+		cr.andPasswordEqualTo(password);
+		
+		List<User> list = userMapper.selectByExample(example);
+		System.out.println(list);
+		if (list.size()>0) {
+			return MedicineResult.build(500, "用户名或密码错误");
+		}
+		
+		return MedicineResult.ok();
+	}
+
+	@Override
+	public MedicineResult isuser(String param) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 
 }

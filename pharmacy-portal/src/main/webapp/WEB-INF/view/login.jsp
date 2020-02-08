@@ -61,29 +61,6 @@
 
             $(document).ready(function () {
                 $("#signupForm").validate({
-                    errorClass: "alert alert-danger",
-
-                    groups: {
-
-                        codecheck: "username password"
-
-                    },
-                    errorPlacement: function (error, element) {
-                        error.insertAfter(".am-title")
-                    },
-                    submitHandler: function (form) {
-                        $(".glyphicon-ok-sign").show();
-                        $(".glyphicon-remove-sign").hide();
-
-                        form.submit();
-
-                    },
-
-                    invalidHandler: function () {
-
-                        $(".glyphicon-ok-sign").hide();
-                        $(".glyphicon-remove-sign").show();
-                    },
 
                     rules: {
                         username: "required",
@@ -103,6 +80,31 @@
                     },
 
 
+                });
+            });
+            var redirectUrl = "";
+            var LOGIN = {
+                doLogin:function() {
+                    alert("123");
+                    $.post("/user/login", $("#signupForm").serialize(),function(data){
+                        alert("456")
+                        if (data.status == 200) {
+                            alert("登录成功！");
+                            if (redirectUrl == "") {
+                                location.href = "http://localhost:8081";
+                            } else {
+                                location.href =redirectUrl;
+                            }
+                        } else {
+                            alert("登录失败，原因是：" + data.msg);
+
+                        }
+                    });
+                }
+            };
+            $(function(){
+                $("#btn").click(function(){
+                    LOGIN.doLogin();
                 });
             });
         </script>

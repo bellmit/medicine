@@ -152,7 +152,7 @@
                             required : true,
                             lettersonly : true,
                             remote   : {
-                                url :"/user/isuser/"+$("#user_name").val(),
+                                url :"/user/check"+$('#user_name').val(),
                                 type:'get',
                                 data:{
                                     user_name : function(){

@@ -1,5 +1,8 @@
 package com.medince.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.medince.service.inteface.MedinceService;
 import com.medince.service.inteface.UserService;
+import com.medince.utils.MedicineResult;
 import com.taotao.pojo.MedicineMessage;
+import com.taotao.pojo.User;
 
 @RestController
 @RequestMapping("/user")
@@ -23,18 +28,28 @@ public class UserController {
 	public UserController() {
 		System.out.println("当我被创造的时候");
 	}
-
-	@RequestMapping("/test")
-	public String test() {
-		System.out.println("test");
-		System.out.println(userService.login("test", "123"));
-		return "123";
+	
+	@RequestMapping("/createUser")
+	public MedicineResult createUser(User user) {
+		
+		return userService.createUser(user);
 	}
 	
-	@RequestMapping("/test/{id}")
-	public MedicineMessage test1(@PathVariable String id) {
-		System.out.println(id);
-		System.out.println(meService.query(id).getItemName());
-		return meService.query(id);
+	@RequestMapping("/userLogin/{username}/{password}/{request}/{response}")
+	public MedicineResult userLogin(String username, String password, HttpServletRequest request,HttpServletResponse response) {
+		System.out.println("进入接口Controller");
+		return userService.userLogin(username, password, request, response);
+	}
+	
+	@RequestMapping("/isuser/{param}")
+	public MedicineResult isuser(String param) {
+		
+		return userService.isuser(param);
+	}
+	
+	@RequestMapping("/checkData/{type}")
+	MedicineResult checkData(Integer type) {
+		
+		return userService.checkData(type);
 	}
 }

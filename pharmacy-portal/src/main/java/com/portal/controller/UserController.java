@@ -28,14 +28,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/check/{param}/{type}")
+    @RequestMapping("/check/{type}")
     @ResponseBody
-    public Object checkData(@PathVariable String param, @PathVariable Integer type, String callback) {
+    public Object checkData(@PathVariable Integer type, String callback) {
         MedicineResult result = null;
-        //参数有效性校验
-        if (type != 1 && type != 2 && type != 3) {
-            result = MedicineResult.build(400, "校验内容类型错误");
-        }
+
         //校验出错
         if (null != result) {
             if (null != callback) {
@@ -48,7 +45,7 @@ public class UserController {
         }
         //调用服务
         try {
-            result = userService.checkData(param);
+            result = userService.checkData(type);
 
         } catch (Exception e) {
             result = MedicineResult.build(500, e.getMessage());
@@ -79,7 +76,8 @@ public class UserController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public MedicineResult userLogin(String username, String password, HttpServletRequest request,
-                                  HttpServletResponse response) {
+                                    HttpServletResponse response) {
+        System.out.println("进入登录Controller");
         try {
             MedicineResult result = userService.userLogin(username, password, request, response);
             return result;
@@ -89,19 +87,12 @@ public class UserController {
         }
     }
 
-    @RequestMapping(value = "/isuser/{param}",method = RequestMethod.GET)
+    @RequestMapping(value = "/isuser/{param}", method = RequestMethod.GET)
     @ResponseBody
-    public  MedicineResult isUser(@PathVariable String param){
-        MedicineResult user = userService.isuser(param);
-        if (param.equals("18832641897")){
-            System.out.println("通过");
-            return user;
-        }else {
-          return MedicineResult.build(400, "校验内容类型错误");
-        }
+    public MedicineResult isUser(@PathVariable String param) {
 
+        return null;
     }
-
 
 
 }
