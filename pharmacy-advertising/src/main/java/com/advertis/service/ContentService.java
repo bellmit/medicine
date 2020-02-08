@@ -1,7 +1,8 @@
 package com.advertis.service;
 
-import pojo.Content;
-import pojo.MedicineMessage;
+
+import com.taotao.pojo.Content;
+import com.taotao.pojo.MedicineMessage;
 
 import java.util.List;
 
