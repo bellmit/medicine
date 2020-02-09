@@ -1391,10 +1391,11 @@ catch(e){}
         <%--});--%>
 <%--</script>--%>
 <script type="text/javascript">
-    (function () {
+
         var data = ${ad1};
-        alert(data);
-    })
+     $().ready(function () {
+         alert(data);
+     });
 
 </script>
 <!-- HomeFocusLayout Begin-->
