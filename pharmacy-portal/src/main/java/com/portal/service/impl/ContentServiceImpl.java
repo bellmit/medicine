@@ -27,13 +27,13 @@ public class ContentServiceImpl implements ContentService {
         //创建一个jsp页码要求的pojo列表
         for (Content tbContent : list) {
             Map map = new HashMap<>();
-            map.put("src", tbContent.getPic());
-            map.put("height", 240);
-            map.put("width", 670);
+            map.put("srcS", tbContent.getPic());
+            map.put("heightA", 240);
+            map.put("widthA", 670);
             map.put("widthB", 550);
             map.put("heightB", 240);
-            map.put("href", tbContent.getUrl());
-            map.put("alt", tbContent.getTitle());
+            map.put("hrefS", tbContent.getUrl());
+            map.put("altS", tbContent.getTitle());
             resultList.add(map);
         }
         return JsonUtils.objectToJson(resultList);
