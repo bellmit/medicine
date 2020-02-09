@@ -1,5 +1,8 @@
 package com.portal.service.impl;
 
+
+import com.alibaba.dubbo.common.json.JSONObject;
+import com.alibaba.fastjson.JSON;
 import com.portal.service.UserService;
 import com.taotao.pojo.User;
 import httpClient.HttpClientUtil;
@@ -10,6 +13,10 @@ import result.MedicineResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Lenovo on 2020/2/8.
@@ -19,16 +26,36 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Service
 public class UserServiceImpl implements UserService {
+
+    //判断手机是否可以注册
     @Override
-    public MedicineResult checkData(Integer type) {
-        return null;
+    public MedicineResult checkData(Integer token) {
+        String s ="http://localhost:8080/aa/user/checkData/"+token;
+        String json = HttpClientUtil.doGet(s);
+        System.out.println("手机号=="+token);
+        MedicineResult medicineMessage = JsonUtils.jsonToPojo(json, MedicineResult.class);
+        return medicineMessage;
     }
 
+
+    //注册
     @Override
-    public MedicineResult createUser(User user) {
-        return null;
+    public MedicineResult createUser(User user) throws IOException {
+        System.out.println("连接接口");
+
+
+        user.setUserId(Long.valueOf(200));
+        user.setUserName("132165165165");
+
+       String user1= JSON.toJSONString(user);
+        String json = HttpClientUtil.doGet("http://localhost:8080/aa/user/createUser/"+user);
+        System.out.println("==="+json);
+        MedicineResult medicineMessage = JsonUtils.jsonToPojo(json, MedicineResult.class);
+        return medicineMessage;
     }
 
+
+    //登录
     @Override
     public MedicineResult userLogin(String username, String password, HttpServletRequest request, HttpServletResponse response) {
         System.out.println("username"+username);
@@ -51,8 +78,9 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    //判断是否可以注册
     @Override
     public MedicineResult getUserByToken(String token) {
-        return null;
+  return null;
     }
 }

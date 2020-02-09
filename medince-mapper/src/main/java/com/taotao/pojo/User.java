@@ -162,4 +162,26 @@ public class User {
     public void setUserZj(String userZj) {
         this.userZj = userZj == null ? null : userZj.trim();
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userTx='" + userTx + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userEmail='" + userEmail + '\'' +
+                ", userZsname='" + userZsname + '\'' +
+                ", userSex=" + userSex +
+                ", userBirthday=" + userBirthday +
+                ", userAddress='" + userAddress + '\'' +
+                ", userQq=" + userQq +
+                ", userAlili='" + userAlili + '\'' +
+                ", password='" + password + '\'' +
+                ", userState=" + userState +
+                ", userCreated=" + userCreated +
+                ", userUpdated=" + userUpdated +
+                ", userYl='" + userYl + '\'' +
+                ", userZj='" + userZj + '\'' +
+                '}';
+    }
 }

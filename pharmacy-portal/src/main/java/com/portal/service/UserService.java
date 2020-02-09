@@ -6,6 +6,7 @@ import result.MedicineResult;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * Created by Lenovo on 2020/1/18.
@@ -19,7 +20,7 @@ public interface UserService {
     public MedicineResult checkData(Integer type);
 
     // 用户注册  注册根据影响行数判断是否注册成功
-    public MedicineResult createUser(User user);
+    public MedicineResult createUser(User user) throws IOException;
 
     //用户登录
     public  MedicineResult userLogin(String username, String password, HttpServletRequest request,

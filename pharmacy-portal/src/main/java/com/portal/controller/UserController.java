@@ -3,6 +3,7 @@ package com.portal.controller;
 
 import com.portal.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,6 +15,7 @@ import com.taotao.pojo.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 /**
@@ -28,21 +30,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/check/{type}")
+    @RequestMapping(value = "/check/{type}")
     @ResponseBody
     public Object checkData(@PathVariable Integer type, String callback) {
         MedicineResult result = null;
-
-        //校验出错
-        if (null != result) {
-            if (null != callback) {
-                MappingJacksonValue mappingJacksonValue = new MappingJacksonValue(result);
-                mappingJacksonValue.setJsonpFunction(callback);
-                return mappingJacksonValue;
-            } else {
-                return result;
-            }
-        }
+        System.out.println("11111111111111111111111111111111111111");
         //调用服务
         try {
             result = userService.checkData(type);
@@ -76,10 +68,11 @@ public class UserController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
     public MedicineResult userLogin(String username, String password, HttpServletRequest request,
-                                    HttpServletResponse response) {
+                                    HttpServletResponse response,HttpSession session) {
         System.out.println("进入登录Controller");
         try {
             MedicineResult result = userService.userLogin(username, password, request, response);
+             session.setAttribute("username",username);
             return result;
         } catch (Exception e) {
             e.printStackTrace();

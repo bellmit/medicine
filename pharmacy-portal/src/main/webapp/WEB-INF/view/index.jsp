@@ -9,6 +9,7 @@
     <meta name="description" content="网上买药哪个网站好？网上买药的正规网站【百姓平安药房网】经国家药监局批准的网上药店排名前列的药品网,互联网药品交易服务编号：京C20150004，致力于向您提供安全放心的药品及服务，做中国最好的药品网官网。" />
     <meta name="baidu-site-verification" content="wF8dpAI40x" />
     <meta name="copyright" content="yuekangsong Inc. All Rights Reserved">
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <style type="text/css">
         body {
             _behavior: url(https://www.yuekangsong.com/shop/templates/default/css/csshover.htc);
@@ -209,7 +210,10 @@ catch(e){}
     <div class="topbar wrapper">
         <div class="am-topbar">
             <div class="am-topbar-left">
-                <span><b><a href="/page/regist">注册</a></b></span><span><a href="/page/login">请登录</a></span>
+                <c:if test="${sessionScope.username ==null}">
+                    <span><b><a href="/page/regist">注册</a></b></span><span><a href="/page/login">请登录</a></span>
+                </c:if>
+                <span><b><a href="/page/regist">注册</a></b></span><span><a>${sessionScope.username}</a></span>
             </div>
             <div class="am-topbar-right">
                 <ul>
