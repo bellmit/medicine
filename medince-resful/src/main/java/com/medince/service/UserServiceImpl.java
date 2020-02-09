@@ -59,7 +59,7 @@ public class UserServiceImpl implements UserService{
 		
 		if(i==0)
 			return MedicineResult.build(500, "用户注册失败");
-		return MedicineResult.ok();
+		    return MedicineResult.ok();
 	}
 
 	@Override

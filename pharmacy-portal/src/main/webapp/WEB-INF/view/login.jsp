@@ -85,9 +85,7 @@
             var redirectUrl = "";
             var LOGIN = {
                 doLogin:function() {
-                    alert("123");
                     $.post("/user/login", $("#signupForm").serialize(),function(data){
-                        alert("456")
                         if (data.status == 200) {
                             alert("登录成功！");
                             if (redirectUrl == "") {

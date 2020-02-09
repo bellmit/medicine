@@ -5,6 +5,7 @@ import com.portal.service.ContentService;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
 import org.springframework.stereotype.Service;
+import result.MedicineResult;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,20 +19,21 @@ import java.util.Map;
 public class ContentServiceImpl implements ContentService {
     public String getContentList(){
 
-        String result = HttpClientUtil.doGet("http://localhost:8083/content");
+        String result = HttpClientUtil.doGet("http://localhost:8083/advertising/content");
         try {
-        List<Content> contentses = JsonUtils.jsonToList(result, Content.class);
-        List<Map> resultList = new ArrayList<>();
+            MedicineResult medicineResult = MedicineResult.formatToList(result, Content.class);
+            List<Content> list=(List<Content>)medicineResult.getData();
+            List<Map> resultList = new ArrayList<>();
         //创建一个jsp页码要求的pojo列表
-        for (Content tbContent : contentses) {
+        for (Content tbContent : list) {
             Map map = new HashMap<>();
-            map.put("src", tbContent.getPic());
-            map.put("height", 240);
-            map.put("width", 670);
+            map.put("srcS", tbContent.getPic());
+            map.put("heightA", 240);
+            map.put("widthA", 670);
             map.put("widthB", 550);
             map.put("heightB", 240);
-            map.put("href", tbContent.getUrl());
-            map.put("alt", tbContent.getTitle());
+            map.put("hrefS", tbContent.getUrl());
+            map.put("altS", tbContent.getTitle());
             resultList.add(map);
         }
         return JsonUtils.objectToJson(resultList);
