@@ -1377,27 +1377,26 @@ catch(e){}
 <![endif]-->
 <div class="clear"></div>
 <%--大广告位的请求--%>
-<%--<script type="text/javascript">--%>
-    <%--$.ajax({--%>
-        <%--type:"GET",//请求方式为get或者post--%>
-        <%--url:"/imgContent",//请求的url(一般为后台接口)--%>
-<%--//        data:{user:"xiao"},//发送到服务器的参数--%>
-        <%--dataType:"json",//服务器响应的数据类型--%>
-        <%--success:function(data){ //请求成功后返回的数据，赋值给变量'data'--%>
-            <%--//对data进行操作--%>
-            <%--alert(data);--%>
-            <%--}--%>
-
-        <%--});--%>
-<%--</script>--%>
 <script type="text/javascript">
+    $.ajax({
+        type:"GET",//请求方式为get或者post
+        url:"/imgContent",//请求的url(一般为后台接口)
+//        data:{user:"xiao"},//发送到服务器的参数
+        dataType:"json",//服务器响应的数据类型
+        success:function(data){ //请求成功后返回的数据，赋值给变量'data'
+            //对data进行操作
+            alert("11"+data);
+            }
 
-        var data = ${ad1};
-     $().ready(function () {
-         alert(data);
-     });
-
+        });
 </script>
+<%--<script type="text/javascript">--%>
+    <%--(function () {--%>
+        <%--var data = ${ad1};--%>
+        <%--alert(data);--%>
+    <%--})--%>
+
+<%--</script>--%>
 <!-- HomeFocusLayout Begin-->
 <div class="home-focus-layout">
 
