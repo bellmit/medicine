@@ -1389,7 +1389,7 @@ catch(e){}
         dataType:"json",//服务器响应的数据类型
         success:function(data){ //请求成功后返回的数据，赋值给变量'data'
             //对data进行操作
-            alert("11"+data);
+            alert("111"+data);
             }
 
         });
