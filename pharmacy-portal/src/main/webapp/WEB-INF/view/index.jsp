@@ -1580,7 +1580,7 @@ catch(e){}
 <script type="text/javascript" src="../../data/resource/js/perfect-scrollbar.min.js"></script>
 <script type="text/javascript" src="../../data/resource/js/qtip/jquery.qtip.min.js"></script>
 <link href="../../data/resource/js/qtip/jquery.qtip.min.css" rel="stylesheet" type="text/css">
-<!-- 对比 -->
+<!-- 对比dddddd -->
 <script src="../../shop/resource/js/compare.js"></script>
 <script type="text/javascript">
     $(function () {
