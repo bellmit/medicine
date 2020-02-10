@@ -47,7 +47,7 @@ public class UserServiceImpl implements UserService {
         user.setUserId(Long.valueOf(200));
         user.setUserName("132165165165");
 
-       String user1= JSON.toJSONString(user);
+        String user1= JSON.toJSONString(user);
         String json = HttpClientUtil.doGet("http://localhost:8080/aa/user/createUser/"+user);
         System.out.println("==="+json);
         MedicineResult medicineMessage = JsonUtils.jsonToPojo(json, MedicineResult.class);
