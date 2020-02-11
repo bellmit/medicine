@@ -3,8 +3,11 @@ package com.medince.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.medince.mapper.MedicineMessageMapper;
 import com.taotao.pojo.ItemCat;
 import com.taotao.pojo.ItemCatExample;
+import com.taotao.pojo.MedicineMessage;
+import com.taotao.pojo.MedicineMessageExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +21,9 @@ public class ItemCatServiceimpl implements ItemCatService{
 
 	@Autowired
 	private ItemCatMapper catMapper;
+
+	@Autowired
+    private MedicineMessageMapper messageMapper;
 	
 	@Override
 	public ResultDate getItemCatLis() {
@@ -26,8 +32,21 @@ public class ItemCatServiceimpl implements ItemCatService{
 		result.setData(getCatList(0));
 		return result;
 	}
-	
-	private List<Object> getCatList(Integer parentId) {
+
+	//根据分类id查询商品
+    @Override
+    public List<MedicineMessage> getCid(Long cid) {
+
+        MedicineMessageExample example = new MedicineMessageExample();
+        MedicineMessageExample.Criteria criteria = example.createCriteria();
+        criteria.andCidEqualTo(cid);
+
+        List<MedicineMessage> medicineMessages = messageMapper.selectByExample(example);
+
+        return medicineMessages;
+    }
+
+    private List<Object> getCatList(Integer parentId) {
 		
 		ItemCatExample item = new ItemCatExample();
 		

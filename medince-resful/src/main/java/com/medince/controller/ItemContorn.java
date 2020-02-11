@@ -2,9 +2,13 @@ package com.medince.controller;
 
 import com.medince.service.inteface.ItemCatService;
 import com.medince.utils.ResultDate;
+import com.taotao.pojo.MedicineMessage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/item")
@@ -18,4 +22,9 @@ public class ItemContorn {
 		
 		return sercice.getItemCatLis();
 	}
+
+	@RequestMapping("/cat/cid/{cid}")
+    public List<MedicineMessage> getCid(@PathVariable("cid")Long cid){
+	    return sercice.getCid(cid);
+    }
 }
