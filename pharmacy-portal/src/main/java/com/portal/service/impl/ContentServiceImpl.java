@@ -17,7 +17,7 @@ import java.util.Map;
  */
 @Service
 public class ContentServiceImpl implements ContentService {
-    public String getContentList(){
+    public List<Content> getContentList(){
 
         String result = HttpClientUtil.doGet("http://localhost:8083/advertising/content");
         try {
@@ -25,18 +25,19 @@ public class ContentServiceImpl implements ContentService {
             List<Content> list=(List<Content>)medicineResult.getData();
             List<Map> resultList = new ArrayList<>();
         //创建一个jsp页码要求的pojo列表
-        for (Content tbContent : list) {
-            Map map = new HashMap<>();
-            map.put("srcS", tbContent.getPic());
-            map.put("heightA", 240);
-            map.put("widthA", 670);
-            map.put("widthB", 550);
-            map.put("heightB", 240);
-            map.put("hrefS", tbContent.getUrl());
-            map.put("altS", tbContent.getTitle());
-            resultList.add(map);
-        }
-        return JsonUtils.objectToJson(resultList);
+//        for (Content tbContent : list) {
+//            Map map = new HashMap<>();
+//            map.put("srcS", tbContent.getPic());
+//            map.put("heightA", 240);
+//            map.put("widthA", 670);
+//            map.put("widthB", 550);
+//            map.put("heightB", 240);
+//            map.put("hrefS", tbContent.getUrl());
+//            map.put("altS", tbContent.getTitle());
+//            resultList.add(map);
+//        }
+//        return JsonUtils.objectToJson(resultList);
+            return list;
         } catch (Exception e) {
             e.printStackTrace();
         }
