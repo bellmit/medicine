@@ -2,6 +2,7 @@ package com.portal.controller;
 
 import com.portal.service.ContentService;
 import com.taotao.pojo.Content;
+import com.taotao.pojo.MedicineMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,10 +22,17 @@ public class ContentController {
    private ContentService contentService;
 
     @RequestMapping("/imgContent")
-    public String getList(HttpServletRequest request){
+    public String getContentList(HttpServletRequest request){
         List<Content> contentList = contentService.getContentList();
        request.getSession().setAttribute("content",contentList);
         System.out.println("123:"+contentList);
+        return "index";
+    }
+    @RequestMapping("/messagesStatus")
+    public String getMessagesStatus(HttpServletRequest request){
+        List<MedicineMessage> messageStatus = contentService.getMessageStatus();
+        request.getSession().setAttribute("messageStatus",messageStatus);
+        System.out.println("Status:"+messageStatus);
         return "index";
     }
 
