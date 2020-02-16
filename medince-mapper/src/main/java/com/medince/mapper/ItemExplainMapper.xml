@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.medince.mapper.ItemExplainMapper" >
-  <resultMap id="BaseResultMap" type="com.taotao.pojo.ItemExplain" >
+  <resultMap id="BaseResultMap" type="com.medince.pojo.ItemExplain" >
     <result column="item_id" property="itemId" jdbcType="INTEGER" />
     <result column="item_explain" property="itemExplain" jdbcType="VARCHAR" />
     <result column="created" property="created" jdbcType="VARCHAR" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List" >
     item_id, item_explain, created, updated
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.taotao.pojo.ItemExplainExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.medince.pojo.ItemExplainExample" >
     select
     <if test="distinct" >
       distinct
@@ -82,19 +82,19 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.taotao.pojo.ItemExplainExample" >
+  <delete id="deleteByExample" parameterType="com.medince.pojo.ItemExplainExample" >
     delete from item_explain
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.taotao.pojo.ItemExplain" >
+  <insert id="insert" parameterType="com.medince.pojo.ItemExplain" >
     insert into item_explain (item_id, item_explain, created, 
       updated)
     values (#{itemId,jdbcType=INTEGER}, #{itemExplain,jdbcType=VARCHAR}, #{created,jdbcType=VARCHAR}, 
       #{updated,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.taotao.pojo.ItemExplain" >
+  <insert id="insertSelective" parameterType="com.medince.pojo.ItemExplain" >
     insert into item_explain
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="itemId != null" >
@@ -125,7 +125,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.taotao.pojo.ItemExplainExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.medince.pojo.ItemExplainExample" resultType="java.lang.Integer" >
     select count(*) from item_explain
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />

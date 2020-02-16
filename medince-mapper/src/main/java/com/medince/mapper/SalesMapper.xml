@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.medince.mapper.SalesMapper" >
-  <resultMap id="BaseResultMap" type="com.taotao.pojo.Sales" >
+  <resultMap id="BaseResultMap" type="com.medince.pojo.Sales" >
     <result column="item_id" property="itemId" jdbcType="VARCHAR" />
     <result column="item_mj" property="itemMj" jdbcType="VARCHAR" />
     <result column="item_jg" property="itemJg" jdbcType="INTEGER" />
@@ -71,7 +71,7 @@
   <sql id="Base_Column_List" >
     item_id, item_mj, item_jg, item_hd, item_sl, created, updated
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.taotao.pojo.SalesExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.medince.pojo.SalesExample" >
     select
     <if test="distinct" >
       distinct
@@ -85,13 +85,13 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.taotao.pojo.SalesExample" >
+  <delete id="deleteByExample" parameterType="com.medince.pojo.SalesExample" >
     delete from sales
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.taotao.pojo.Sales" >
+  <insert id="insert" parameterType="com.medince.pojo.Sales" >
     insert into sales (item_id, item_mj, item_jg, 
       item_hd, item_sl, created, 
       updated)
@@ -99,7 +99,7 @@
       #{itemHd,jdbcType=VARCHAR}, #{itemSl,jdbcType=INTEGER}, #{created,jdbcType=TIMESTAMP}, 
       #{updated,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.taotao.pojo.Sales" >
+  <insert id="insertSelective" parameterType="com.medince.pojo.Sales" >
     insert into sales
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="itemId != null" >
@@ -148,7 +148,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.taotao.pojo.SalesExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.medince.pojo.SalesExample" resultType="java.lang.Integer" >
     select count(*) from sales
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />

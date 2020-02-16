@@ -3,7 +3,7 @@ package com.yuekangsong.service;
 public interface MedicineService {
 
     //查询药品的基本信息
-    public com.taotao.pojo.MedicineMessage query(Integer itemId);
+    public MedicineMessage query(Integer itemId);
 
     //查询商品的详情信息
     public String queryDesc(String itemId);

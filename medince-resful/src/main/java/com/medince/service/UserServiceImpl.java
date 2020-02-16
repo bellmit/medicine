@@ -5,14 +5,13 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.medince.mapper.UserMapper;
+import com.medince.pojo.User;
+import com.medince.pojo.UserExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.medince.mapper.UserMapper;
 import com.medince.service.inteface.UserService;
-import com.taotao.pojo.User;
-import com.taotao.pojo.UserExample;
-import com.taotao.pojo.UserExample.Criteria;
 import result.MedicineResult;
 
 @Service
@@ -40,8 +39,8 @@ public class UserServiceImpl implements UserService{
 	public MedicineResult checkData(Integer type) {
 		// TODO Auto-generated method stub
 		UserExample example = new UserExample();
-		Criteria cr = example.createCriteria();
-		cr.andUserNameEqualTo(type.toString());
+        UserExample.Criteria cr = example.createCriteria();
+        cr.andUserNameEqualTo(type.toString());
 		List<User> list = userMapper.selectByExample(example);
 		
 		if (list.size()>0) {
@@ -67,9 +66,9 @@ public class UserServiceImpl implements UserService{
 			HttpServletResponse response) {
 		
 		UserExample example = new UserExample();
-		Criteria cr = example.createCriteria();
-		
-		cr.andUserNameEqualTo(username);
+        UserExample.Criteria cr = example.createCriteria();
+
+        cr.andUserNameEqualTo(username);
 		cr.andPasswordEqualTo(password);
 		
 		List<User> list = userMapper.selectByExample(example);

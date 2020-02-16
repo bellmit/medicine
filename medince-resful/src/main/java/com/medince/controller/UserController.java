@@ -3,8 +3,6 @@ package com.medince.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.alibaba.dubbo.common.json.JSONObject;
-import com.alibaba.fastjson.JSON;
 import json.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.medince.service.inteface.MedinceService;
 import com.medince.service.inteface.UserService;
-import com.taotao.pojo.User;
 import result.MedicineResult;
 
 @RestController

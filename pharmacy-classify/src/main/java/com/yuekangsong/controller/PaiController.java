@@ -1,15 +1,10 @@
 package com.yuekangsong.controller;
 
-import com.taotao.pojo.MedicineMessage;
 import com.yuekangsong.service.PaiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import result.MedinceResult;
-
-import java.util.List;
 
 /**
  * Created by lenovo on 2020/1/29.

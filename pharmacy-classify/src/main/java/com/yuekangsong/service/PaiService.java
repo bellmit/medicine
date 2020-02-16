@@ -1,11 +1,6 @@
 package com.yuekangsong.service;
 
 
-import com.taotao.pojo.MedicineMessage;
-import result.ResultData;
-
-import java.util.List;
-
 /**
  * Created by lenovo on 2020/1/29.
  */

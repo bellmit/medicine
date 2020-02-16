@@ -1,10 +1,10 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.MedicineMessage;
-import com.taotao.pojo.MedicineMessageExample;
 import java.util.List;
+
+import com.medince.pojo.MedicineMessage;
+import com.medince.pojo.MedicineMessageExample;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 
 public interface MedicineMessageMapper {
     int countByExample(MedicineMessageExample example);
@@ -16,10 +16,6 @@ public interface MedicineMessageMapper {
     int insert(MedicineMessage record);
 
     int insertSelective(MedicineMessage record);
-
-    //新增查询商品状态方法
-    @Select("select * from medicine_message where status=1 limit 0,2")
-    List<MedicineMessage> selectStatus();
 
     List<MedicineMessage> selectByExample(MedicineMessageExample example);
 

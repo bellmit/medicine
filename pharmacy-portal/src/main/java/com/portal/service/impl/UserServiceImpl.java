@@ -1,10 +1,8 @@
 package com.portal.service.impl;
 
 
-import com.alibaba.dubbo.common.json.JSONObject;
 import com.alibaba.fastjson.JSON;
 import com.portal.service.UserService;
-import com.taotao.pojo.User;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
 import org.springframework.stereotype.Service;
@@ -14,9 +12,6 @@ import result.MedicineResult;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 /**
  * Created by Lenovo on 2020/2/8.

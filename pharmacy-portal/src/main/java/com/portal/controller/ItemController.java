@@ -1,6 +1,5 @@
 package com.portal.controller;
 
-import com.taotao.pojo.MedicineMessage;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
 import org.springframework.stereotype.Controller;

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.medince.mapper.ItemDescMapper" >
-  <resultMap id="BaseResultMap" type="com.taotao.pojo.ItemDesc" >
+  <resultMap id="BaseResultMap" type="com.medince.pojo.ItemDesc" >
     <result column="item_id" property="itemId" jdbcType="VARCHAR" />
     <result column="created" property="created" jdbcType="TIMESTAMP" />
     <result column="updated" property="updated" jdbcType="TIMESTAMP" />
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.taotao.pojo.ItemDesc" extends="BaseResultMap" >
+  <resultMap id="ResultMapWithBLOBs" type="com.medince.pojo.ItemDesc" extends="BaseResultMap" >
     <result column="item_desc" property="itemDesc" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Example_Where_Clause" >
@@ -73,7 +73,7 @@
   <sql id="Blob_Column_List" >
     item_desc
   </sql>
-  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.taotao.pojo.ItemDescExample" >
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.medince.pojo.ItemDescExample" >
     select
     <if test="distinct" >
       distinct
@@ -89,7 +89,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.taotao.pojo.ItemDescExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.medince.pojo.ItemDescExample" >
     select
     <if test="distinct" >
       distinct
@@ -103,19 +103,19 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.taotao.pojo.ItemDescExample" >
+  <delete id="deleteByExample" parameterType="com.medince.pojo.ItemDescExample" >
     delete from item_desc
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.taotao.pojo.ItemDesc" >
+  <insert id="insert" parameterType="com.medince.pojo.ItemDesc" >
     insert into item_desc (item_id, created, updated, 
       item_desc)
     values (#{itemId,jdbcType=VARCHAR}, #{created,jdbcType=TIMESTAMP}, #{updated,jdbcType=TIMESTAMP}, 
       #{itemDesc,jdbcType=LONGVARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.taotao.pojo.ItemDesc" >
+  <insert id="insertSelective" parameterType="com.medince.pojo.ItemDesc" >
     insert into item_desc
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="itemId != null" >
@@ -146,7 +146,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.taotao.pojo.ItemDescExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.medince.pojo.ItemDescExample" resultType="java.lang.Integer" >
     select count(*) from item_desc
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />

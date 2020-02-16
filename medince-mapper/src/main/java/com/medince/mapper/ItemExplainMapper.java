@@ -1,8 +1,9 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.ItemExplain;
-import com.taotao.pojo.ItemExplainExample;
 import java.util.List;
+
+import com.medince.pojo.ItemExplain;
+import com.medince.pojo.ItemExplainExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface ItemExplainMapper {

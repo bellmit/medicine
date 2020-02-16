@@ -1,8 +1,9 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.User;
-import com.taotao.pojo.UserExample;
 import java.util.List;
+
+import com.medince.pojo.User;
+import com.medince.pojo.UserExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {

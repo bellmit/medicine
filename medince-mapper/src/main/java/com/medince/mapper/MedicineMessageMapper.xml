@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.medince.mapper.MedicineMessageMapper" >
-  <resultMap id="BaseResultMap" type="com.taotao.pojo.MedicineMessage" >
+  <resultMap id="BaseResultMap" type="com.medince.pojo.MedicineMessage" >
     <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="item_id" property="itemId" jdbcType="VARCHAR" />
     <result column="item_name" property="itemName" jdbcType="VARCHAR" />
+    <result column="img" property="img" jdbcType="VARCHAR" />
     <result column="item_brand" property="itemBrand" jdbcType="VARCHAR" />
     <result column="item_stack" property="itemStack" jdbcType="BIGINT" />
     <result column="item_bazaar" property="itemBazaar" jdbcType="BIGINT" />
@@ -11,6 +13,7 @@
     <result column="item_promotion" property="itemPromotion" jdbcType="BIGINT" />
     <result column="status" property="status" jdbcType="TINYINT" />
     <result column="param_item" property="paramItem" jdbcType="VARCHAR" />
+    <result column="pai" property="pai" jdbcType="INTEGER" />
     <result column="num" property="num" jdbcType="INTEGER" />
     <result column="cid" property="cid" jdbcType="BIGINT" />
     <result column="created" property="created" jdbcType="TIMESTAMP" />
@@ -75,10 +78,10 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, item_name, item_brand, item_stack, item_bazaar, item_membership, item_promotion, 
-    status, param_item, num, cid, created, updated
+    id, item_id, item_name, img, item_brand, item_stack, item_bazaar, item_membership, 
+    item_promotion, status, param_item, pai, num, cid, created, updated
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.taotao.pojo.MedicineMessageExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.medince.pojo.MedicineMessageExample" >
     select
     <if test="distinct" >
       distinct
@@ -102,32 +105,40 @@
     delete from medicine_message
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.taotao.pojo.MedicineMessageExample" >
+  <delete id="deleteByExample" parameterType="com.medince.pojo.MedicineMessageExample" >
     delete from medicine_message
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.taotao.pojo.MedicineMessage" >
-    insert into medicine_message (id, item_name, item_brand, 
-      item_stack, item_bazaar, item_membership, 
-      item_promotion, status, param_item, 
+  <insert id="insert" parameterType="com.medince.pojo.MedicineMessage" >
+    insert into medicine_message (id, item_id, item_name, 
+      img, item_brand, item_stack, 
+      item_bazaar, item_membership, item_promotion, 
+      status, param_item, pai, 
       num, cid, created, 
       updated)
-    values (#{id,jdbcType=INTEGER}, #{itemName,jdbcType=VARCHAR}, #{itemBrand,jdbcType=VARCHAR}, 
-      #{itemStack,jdbcType=BIGINT}, #{itemBazaar,jdbcType=BIGINT}, #{itemMembership,jdbcType=BIGINT}, 
-      #{itemPromotion,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, #{paramItem,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{itemId,jdbcType=VARCHAR}, #{itemName,jdbcType=VARCHAR}, 
+      #{img,jdbcType=VARCHAR}, #{itemBrand,jdbcType=VARCHAR}, #{itemStack,jdbcType=BIGINT}, 
+      #{itemBazaar,jdbcType=BIGINT}, #{itemMembership,jdbcType=BIGINT}, #{itemPromotion,jdbcType=BIGINT}, 
+      #{status,jdbcType=TINYINT}, #{paramItem,jdbcType=VARCHAR}, #{pai,jdbcType=INTEGER}, 
       #{num,jdbcType=INTEGER}, #{cid,jdbcType=BIGINT}, #{created,jdbcType=TIMESTAMP}, 
       #{updated,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.taotao.pojo.MedicineMessage" >
+  <insert id="insertSelective" parameterType="com.medince.pojo.MedicineMessage" >
     insert into medicine_message
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
       </if>
+      <if test="itemId != null" >
+        item_id,
+      </if>
       <if test="itemName != null" >
         item_name,
+      </if>
+      <if test="img != null" >
+        img,
       </if>
       <if test="itemBrand != null" >
         item_brand,
@@ -150,6 +161,9 @@
       <if test="paramItem != null" >
         param_item,
       </if>
+      <if test="pai != null" >
+        pai,
+      </if>
       <if test="num != null" >
         num,
       </if>
@@ -167,8 +181,14 @@
       <if test="id != null" >
         #{id,jdbcType=INTEGER},
       </if>
+      <if test="itemId != null" >
+        #{itemId,jdbcType=VARCHAR},
+      </if>
       <if test="itemName != null" >
         #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        #{img,jdbcType=VARCHAR},
       </if>
       <if test="itemBrand != null" >
         #{itemBrand,jdbcType=VARCHAR},
@@ -191,6 +211,9 @@
       <if test="paramItem != null" >
         #{paramItem,jdbcType=VARCHAR},
       </if>
+      <if test="pai != null" >
+        #{pai,jdbcType=INTEGER},
+      </if>
       <if test="num != null" >
         #{num,jdbcType=INTEGER},
       </if>
@@ -205,7 +228,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.taotao.pojo.MedicineMessageExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.medince.pojo.MedicineMessageExample" resultType="java.lang.Integer" >
     select count(*) from medicine_message
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -217,8 +240,14 @@
       <if test="record.id != null" >
         id = #{record.id,jdbcType=INTEGER},
       </if>
+      <if test="record.itemId != null" >
+        item_id = #{record.itemId,jdbcType=VARCHAR},
+      </if>
       <if test="record.itemName != null" >
         item_name = #{record.itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.img != null" >
+        img = #{record.img,jdbcType=VARCHAR},
       </if>
       <if test="record.itemBrand != null" >
         item_brand = #{record.itemBrand,jdbcType=VARCHAR},
@@ -241,6 +270,9 @@
       <if test="record.paramItem != null" >
         param_item = #{record.paramItem,jdbcType=VARCHAR},
       </if>
+      <if test="record.pai != null" >
+        pai = #{record.pai,jdbcType=INTEGER},
+      </if>
       <if test="record.num != null" >
         num = #{record.num,jdbcType=INTEGER},
       </if>
@@ -261,7 +293,9 @@
   <update id="updateByExample" parameterType="map" >
     update medicine_message
     set id = #{record.id,jdbcType=INTEGER},
+      item_id = #{record.itemId,jdbcType=VARCHAR},
       item_name = #{record.itemName,jdbcType=VARCHAR},
+      img = #{record.img,jdbcType=VARCHAR},
       item_brand = #{record.itemBrand,jdbcType=VARCHAR},
       item_stack = #{record.itemStack,jdbcType=BIGINT},
       item_bazaar = #{record.itemBazaar,jdbcType=BIGINT},
@@ -269,6 +303,7 @@
       item_promotion = #{record.itemPromotion,jdbcType=BIGINT},
       status = #{record.status,jdbcType=TINYINT},
       param_item = #{record.paramItem,jdbcType=VARCHAR},
+      pai = #{record.pai,jdbcType=INTEGER},
       num = #{record.num,jdbcType=INTEGER},
       cid = #{record.cid,jdbcType=BIGINT},
       created = #{record.created,jdbcType=TIMESTAMP},
@@ -277,11 +312,17 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.taotao.pojo.MedicineMessage" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.medince.pojo.MedicineMessage" >
     update medicine_message
     <set >
+      <if test="itemId != null" >
+        item_id = #{itemId,jdbcType=VARCHAR},
+      </if>
       <if test="itemName != null" >
         item_name = #{itemName,jdbcType=VARCHAR},
+      </if>
+      <if test="img != null" >
+        img = #{img,jdbcType=VARCHAR},
       </if>
       <if test="itemBrand != null" >
         item_brand = #{itemBrand,jdbcType=VARCHAR},
@@ -304,6 +345,9 @@
       <if test="paramItem != null" >
         param_item = #{paramItem,jdbcType=VARCHAR},
       </if>
+      <if test="pai != null" >
+        pai = #{pai,jdbcType=INTEGER},
+      </if>
       <if test="num != null" >
         num = #{num,jdbcType=INTEGER},
       </if>
@@ -319,9 +363,11 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.taotao.pojo.MedicineMessage" >
+  <update id="updateByPrimaryKey" parameterType="com.medince.pojo.MedicineMessage" >
     update medicine_message
-    set item_name = #{itemName,jdbcType=VARCHAR},
+    set item_id = #{itemId,jdbcType=VARCHAR},
+      item_name = #{itemName,jdbcType=VARCHAR},
+      img = #{img,jdbcType=VARCHAR},
       item_brand = #{itemBrand,jdbcType=VARCHAR},
       item_stack = #{itemStack,jdbcType=BIGINT},
       item_bazaar = #{itemBazaar,jdbcType=BIGINT},
@@ -329,6 +375,7 @@
       item_promotion = #{itemPromotion,jdbcType=BIGINT},
       status = #{status,jdbcType=TINYINT},
       param_item = #{paramItem,jdbcType=VARCHAR},
+      pai = #{pai,jdbcType=INTEGER},
       num = #{num,jdbcType=INTEGER},
       cid = #{cid,jdbcType=BIGINT},
       created = #{created,jdbcType=TIMESTAMP},

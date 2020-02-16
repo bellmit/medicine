@@ -1,8 +1,9 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.ItemCat;
-import com.taotao.pojo.ItemCatExample;
 import java.util.List;
+
+import com.medince.pojo.ItemCat;
+import com.medince.pojo.ItemCatExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface ItemCatMapper {

@@ -20,7 +20,7 @@ public class CatController {
 
     @RequestMapping(value = "/list",produces = "application/json; charset=utf-8")
     @ResponseBody
-    public String CatList(Model model, HttpServletRequest request){
+    public String CatList(HttpServletRequest request){
 
         String data = HttpClientUtil.doGet("http://localhost:8086/cat/list");
 
@@ -28,6 +28,8 @@ public class CatController {
         ResultData json = gson.fromJson(data,ResultData.class);
 
         List<CatDate> list = json.getData();
+
+        System.out.println("list"+list);
 
         request.setAttribute("data",list);
 

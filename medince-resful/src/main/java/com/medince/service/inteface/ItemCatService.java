@@ -1,7 +1,7 @@
 package com.medince.service.inteface;
 
+import com.medince.pojo.MedicineMessage;
 import com.medince.utils.ResultDate;
-import com.taotao.pojo.MedicineMessage;
 
 import java.util.List;
 

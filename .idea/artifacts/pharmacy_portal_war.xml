@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="pharmacy-portal:war">
-    <output-path>$PROJECT_DIR$/pharmacy-portal/target</output-path>
-    <root id="archive" name="pharmacy-portal.war">
-      <element id="artifact" artifact-name="pharmacy-portal:war exploded" />
-    </root>
-  </artifact>
-</component>

@@ -1,10 +1,6 @@
 package com.medince.service.inteface;
 
-import com.taotao.pojo.Appraise;
-import com.taotao.pojo.ItemDesc;
-import com.taotao.pojo.ItemExplain;
-import com.taotao.pojo.MedicineMessage;
-import com.taotao.pojo.Sales;
+import com.medince.pojo.*;
 
 import java.util.List;
 
@@ -22,7 +18,7 @@ public interface MedinceService {
     public Sales querySales(String itemId);
 
     //查询药品的评价
-    public List<Appraise> queryAppraise(String drugId,Integer rank);
+    public List<Appraise> queryAppraise(String drugId, Integer rank);
 
     //查询评价的总条数
     public Integer queryAppraiseCount();

@@ -2,17 +2,12 @@ package com.medince.service;
 
 import java.util.List;
 
-import com.taotao.pojo.*;
+import com.medince.mapper.*;
+import com.medince.pojo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.medince.mapper.AppraiseMapper;
-import com.medince.mapper.ItemDescMapper;
-import com.medince.mapper.ItemExplainMapper;
-import com.medince.mapper.MedicineMessageMapper;
-import com.medince.mapper.SalesMapper;
 import com.medince.service.inteface.MedinceService;
-import com.taotao.pojo.ItemDescExample.Criteria;
 
 @Service
 public class MedinceServiceImpl implements MedinceService{
@@ -47,7 +42,7 @@ public class MedinceServiceImpl implements MedinceService{
         // TODO Auto-generated method stub
 
         ItemDescExample example = new ItemDescExample();
-        Criteria cr = 	example.createCriteria();
+        ItemDescExample.Criteria cr = example.createCriteria();
         cr.andItemIdEqualTo(itemId);
 
         List<ItemDesc> list = itemMapper.selectByExampleWithBLOBs(example);
@@ -65,7 +60,7 @@ public class MedinceServiceImpl implements MedinceService{
 
         ItemExplainExample example = new ItemExplainExample();
 
-        com.taotao.pojo.ItemExplainExample.Criteria cri = example.createCriteria();
+        ItemExplainExample.Criteria cri = example.createCriteria();
 
         List<ItemExplain> list = explinMapper.selectByExample(example);
 
@@ -80,7 +75,7 @@ public class MedinceServiceImpl implements MedinceService{
         // TODO Auto-generated method stub
 
         SalesExample example = new SalesExample();
-        com.taotao.pojo.SalesExample.Criteria cri = example.createCriteria();
+        SalesExample.Criteria cri = example.createCriteria();
         cri.andItemIdEqualTo(itemId);
 
         List<Sales> list = saleMapper.selectByExample(example);

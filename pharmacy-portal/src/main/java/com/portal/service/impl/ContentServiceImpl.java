@@ -1,8 +1,6 @@
 package com.portal.service.impl;
 
-import com.taotao.pojo.Content;
 import com.portal.service.ContentService;
-import com.taotao.pojo.MedicineMessage;
 import httpClient.HttpClientUtil;
 import json.JsonUtils;
 import org.springframework.stereotype.Service;
@@ -18,26 +16,26 @@ import java.util.Map;
  */
 @Service
 public class ContentServiceImpl implements ContentService {
-    public List<Content> getContentList(){
+    public String getContentList(){
 
         String result = HttpClientUtil.doGet("http://localhost:8083/advertising/content");
         try {
             MedicineResult medicineResult = MedicineResult.formatToList(result, Content.class);
             List<Content> list=(List<Content>)medicineResult.getData();
-            return list;
-        } catch (Exception e) {
-            e.printStackTrace();
+            List<Map> resultList = new ArrayList<>();
+        //创建一个jsp页码要求的pojo列表
+        for (Content tbContent : list) {
+            Map map = new HashMap<>();
+            map.put("srcS", tbContent.getPic());
+            map.put("heightA", 240);
+            map.put("widthA", 670);
+            map.put("widthB", 550);
+            map.put("heightB", 240);
+            map.put("hrefS", tbContent.getUrl());
+            map.put("altS", tbContent.getTitle());
+            resultList.add(map);
         }
-        return null;
-    }
-
-    @Override
-    public List<MedicineMessage> getMessageStatus() {
-        String result = HttpClientUtil.doGet("http://localhost:8083/advertising/status");
-        try {
-            MedicineResult medicineResult = MedicineResult.formatToList(result, MedicineMessage.class);
-            List<MedicineMessage> Messagelist=(List<MedicineMessage>)medicineResult.getData();
-            return Messagelist;
+        return JsonUtils.objectToJson(resultList);
         } catch (Exception e) {
             e.printStackTrace();
         }

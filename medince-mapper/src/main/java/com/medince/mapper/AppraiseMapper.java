@@ -1,12 +1,10 @@
 package com.medince.mapper;
 
-
-
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
-import com.taotao.pojo.Appraise;
-import com.taotao.pojo.AppraiseExample;
+import com.medince.pojo.Appraise;
+import com.medince.pojo.AppraiseExample;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 public interface AppraiseMapper {
@@ -35,6 +33,6 @@ public interface AppraiseMapper {
     @Select("select count(*) from appraise")
     int count();
 
-    @Select("select count(*) from appraise where rank = ${id}")
+    @Select("select count(*) from appraise where id = ${id}")
     int num(@Param("id")Integer id);
 }

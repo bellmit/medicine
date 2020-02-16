@@ -1,8 +1,9 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.Sales;
-import com.taotao.pojo.SalesExample;
 import java.util.List;
+
+import com.medince.pojo.Sales;
+import com.medince.pojo.SalesExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface SalesMapper {

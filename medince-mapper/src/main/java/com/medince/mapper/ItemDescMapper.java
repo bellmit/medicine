@@ -1,8 +1,9 @@
 package com.medince.mapper;
 
-import com.taotao.pojo.ItemDesc;
-import com.taotao.pojo.ItemDescExample;
 import java.util.List;
+
+import com.medince.pojo.ItemDesc;
+import com.medince.pojo.ItemDescExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface ItemDescMapper {
